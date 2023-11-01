@@ -1,8 +1,12 @@
+import Image from "next/image";
 import Link from 'next/link';
 import React from 'react'
 import { RiArrowGoBackFill } from 'react-icons/ri';
 
 function TeamPage() {
+  const imageWidth = 220; // Set a reasonable width for your images
+  const imageHeight = 200;   
+  
   return (
         <div className="container my-24 mx-auto md:px-6">
          <section className="mb-32 text-center">
@@ -13,21 +17,33 @@ function TeamPage() {
 
            <div className="lg:gap-xl-12 grid gap-x-6 md:grid-cols-3 xl:grid-cols-4">
              <div className="mb-12">
-               <img src="team/madina.jpg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/madina.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Madina Idd Juma</p>
                <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/nur.png"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/nur.png"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Nur Saiid Thwalib</p>
                <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/galoro.jpeg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/galoro.jpeg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Samira Galoro</p>
                <p className="text-neutral-500 dark:text-neutral-300">
@@ -35,14 +51,22 @@ function TeamPage() {
                </p>
              </div>
              <div className="mb-12">
-               <img src="team/fahamu.jpg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/fahamu.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Daktari Fahamu Kazungu</p>
                <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/shuaib.png"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/shuaib.png"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Shuaib Ali</p>
                <p className="text-neutral-500 dark:text-neutral-300">
@@ -51,35 +75,55 @@ function TeamPage() {
              </div>
 
              <div className="mb-12">
-               <img src="team/ramlah.png"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/ramlah.png"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Ramla Abdi</p>
                <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/salim.jpg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/salim.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Ali Salim</p>
                <p className="text-neutral-500 dark:text-neutral-300">Sports Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/ramadhan.png"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/ramadhan.png"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="" />
                <p className="mb-2 font-bold">Ramadhan Ali</p>
                <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/abubakar.png"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/abubakar.png"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="" />
                <p className="mb-2 font-bold">Abubakar Juma</p>
                <p className="text-neutral-500 dark:text-neutral-300"> Business Presenter</p>
              </div>
 
              <div className="mb-12">
-               <img src="team/musa.jpg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/team/musa.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Musa Khaemba</p>
                <p className="text-neutral-500 dark:text-neutral-300">
@@ -88,7 +132,11 @@ function TeamPage() {
              </div>
 
              <div className="mb-12">
-               <img src="management/mosque.jpg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/management/mosque.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Aisling Sheldon</p>
                <p className="text-neutral-500 dark:text-neutral-300">
@@ -97,7 +145,11 @@ function TeamPage() {
              </div>
 
              <div className="mb-12">
-               <img src="management/mosque.jpg"
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/management/mosque.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Ayat Black</p>
                <p className="text-neutral-500 dark:text-neutral-300">Web designer</p>

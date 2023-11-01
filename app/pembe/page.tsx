@@ -32,9 +32,9 @@ function qytPage () {
           <h2><span className='text-red-600 font-serif text-5xl font-extrabold pr-3'>Company</span><span className='text-5xl font-extrabold'>Description</span></h2>
           <p>
           A recognized brand name in many households over the decades, Pembe is renowned for its consistent 
-          quality and excellent services. From its humble beginnings in 1989, in a small section of Nairobi's
+          quality and excellent services. From its humble beginnings in 1989, in a small section of Nairobis
           Industrial Area, Pembe Flour Mills Ltd has through the years gone on to achieve the status of one of
-          Kenya's leading manufacturers of flour and animal feeds.Pembe manufactures a wide range of products 
+          Kenyas leading manufacturers of flour and animal feeds.Pembe manufactures a wide range of products 
           which include: Home baking flour; Maize meal; Biscuit flour; Bakers flour & Atta mark one and other 
           specialized products for food processing industries including fortified maize meal. For more information 
           contact us on +254 20 551 933 | customercare@pembe.co.ke

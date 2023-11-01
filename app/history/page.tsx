@@ -36,12 +36,12 @@ function HistoryPage () {
           <p>OUR STORY</p>
           <h2><span className='text-red-600 font-serif text-5xl font-extrabold pr-3'>Since</span><span className='text-5xl font-extrabold'>1970</span></h2>
           <p className="mb-3 text-gray-900 dark:text-gray-300">
-          Qays ibn al-Mullawah fell in love with Layla al-Aamiriya. He soon began composing poems about his 
+          Qays ibn alMullawah fell in love with Layla alAamiriya. He soon began composing poems about his 
           love for her, mentioning her name often. His obsessive effort to woo the girl caused some locals to 
-          call him "Majnun." When he asked for her hand in marriage, her father refused because it would be a 
+          call him Majnun. When he asked for her hand in marriage, her father refused because it would be a 
           scandal for Layla to marry someone considered mentally unbalanced. Soon after, Layla was forcibly married 
-          to another noble and rich merchant belonging to the Thaqif tribe in Ta'if. He was described as a handsome
-          man with reddish complexion whose name was Ward Althaqafi. The Arabs called him Ward, meaning "rose" in Arabic.
+          to another noble and rich merchant belonging to the Thaqif tribe in Taif. He was described as a handsome
+          man with reddish complexion whose name was Ward Althaqafi. The Arabs called him Ward, meaning rose in Arabic.
           </p>
           <p className="mb-3 text-gray-900 dark:text-gray-300">
           When Majnun heard of her marriage, he fled the tribal camp and began wandering the surrounding desert. 
@@ -51,7 +51,7 @@ function HistoryPage () {
           <p className="mb-3 text-gray-900 dark:text-gray-300">
           Layla is generally depicted as having moved to a place in Northern Arabia with her husband, where she became 
           ill and eventually died. In some versions, Layla dies of heartbreak from not being able to see her beloved. 
-          Majnun was later found dead in the wilderness in 688 AD, near Layla's grave. He had carved three verses of poetry 
+          Majnun was later found dead in the wilderness in 688 AD, near Laylas grave. He had carved three verses of poetry 
           on a rock near the grave, which are the last three verses attributed to him.
           </p>
           <p className="mb-3 text-gray-900 dark:text-gray-300">
@@ -66,7 +66,7 @@ function HistoryPage () {
           </p>
           <p className="mb-3 text-gray-900 dark:text-gray-300">
           It is a tragic story of undying love much like the later Romeo and Juliet. This type of love 
-          is known as "virgin love" because the lovers never marry or consummate their passion. Other famous virgin 
+          is known as virgin love because the lovers never marry or consummate their passion. Other famous virgin 
           love stories set in Arabia are the stories of Qays and Lubna, Kuthair and Azza, Marwa and Al Majnoun Al 
           Faransi, and Antara and Abla. This literary motif is common throughout the world, notably in the Muslim 
           literature of South Asia, such as Urdu ghazals.

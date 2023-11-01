@@ -1,8 +1,13 @@
+import Image from "next/image";
 import Link from 'next/link'
 import React from 'react'
 import { RiArrowGoBackFill } from 'react-icons/ri'
 
 function ScholarsPage() {
+  const imageWidth = 220; // Set a reasonable width for your images
+  const imageHeight = 200; 
+
+
   return (
    <div className="container my-24 mx-auto md:px-6">
    <section className="mb-32 text-center">
@@ -12,21 +17,36 @@ function ScholarsPage() {
         SHEIKHS</h1>
      <div className="lg:gap-xl-12 grid gap-x-6 md:grid-cols-3 xl:grid-cols-4">
        <div className="mb-12">
-         <img src="sheikhs/sudais.jpg"
+         <Image 
+          layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover" 
+          src="/sheikhs/sudais.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Abdurrahman Sudais</p>
          <p className="text-neutral-500 dark:text-neutral-300">Imam Makka Al-Mukarram</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/shuraim.jpeg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/shuraim.jpeg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Saud Al-Shuraim</p>
          <p className="text-neutral-500 dark:text-neutral-300">Imam Makka Al-Mukarram</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/ajmi.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/ajmi.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Ahmad bin Ali Al-Ajmi</p>
          <p className="text-neutral-500 dark:text-neutral-300">Imam Madinah Al-Munawwar</p>
@@ -34,15 +54,25 @@ function ScholarsPage() {
 
 
        <div className="mb-12">
-         <img src="sheikhs/basit.jpeg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/basit.jpeg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
-         <p className="mb-2 font-bold">Abdul Basit 'Abd us-Samad</p>
+         <p className="mb-2 font-bold">Abdul Basit Abd us-Samad</p>
          <p className="text-neutral-500 dark:text-neutral-300">Quran reciter</p>
        </div>
 
 
        <div className="mb-12">
-         <img src="sheikhs/maher.jpeg"
+         <Image
+          layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"  
+          src="/sheikhs/maher.jpeg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Maher Al-Muaiqly</p>
          <p className="text-neutral-500 dark:text-neutral-300">
@@ -51,21 +81,36 @@ function ScholarsPage() {
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/sufi.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/sufi.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Abdirrashid Ali Sufi</p>
          <p className="text-neutral-500 dark:text-neutral-300">Quran Reciter</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/uthmanmaalim.jpeg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/uthmanmaalim.jpeg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Uthmaan Maalim</p>
          <p className="text-neutral-500 dark:text-neutral-300">Swahili Darsa/sermons</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/mselem.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/mselem.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Mselem Bin Ali</p>
          <p className="text-neutral-500 dark:text-neutral-300">
@@ -74,42 +119,72 @@ function ScholarsPage() {
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/islam.jpeg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/islam.jpeg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Duktur Islam Muhammad</p>
          <p className="text-neutral-500 dark:text-neutral-300">Swahili sermons</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/aweis.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/aweis.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Duktur Mbarak Aweis</p>
          <p className="text-neutral-500 dark:text-neutral-300">Swahili Darsa/Sermons</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/omar.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/omar.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">sheikh omar suleiman</p>
          <p className="text-neutral-500 dark:text-neutral-300">English Sermons</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/anwar.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/anwar.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="" />
          <p className="mb-2 font-bold">Anwar-Al-Awliki</p>
          <p className="text-neutral-500 dark:text-neutral-300">English sermons</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/khan.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/khan.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="" />
          <p className="mb-2 font-bold">Sheikh Nouman Ali Khan</p>
          <p className="text-neutral-500 dark:text-neutral-300">English sermons</p>
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/kombo.jpg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/kombo.jpg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Habib Ali Kombo </p>
          <p className="text-neutral-500 dark:text-neutral-300">
@@ -118,7 +193,12 @@ function ScholarsPage() {
        </div>
 
        <div className="mb-12">
-         <img src="sheikhs/lethome.jpeg"
+         <Image
+         layout="fixed"
+         width={imageWidth}
+         height={imageHeight}
+         objectFit="cover"  
+         src="/sheikhs/lethome.jpeg"
            className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
          <p className="mb-2 font-bold">Sheikh Ibrahim Lethome</p>
          <p className="text-neutral-500 dark:text-neutral-300">

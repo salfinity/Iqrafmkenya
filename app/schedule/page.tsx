@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image";
+
 import {
   Tabs,
   TabsHeader,
@@ -11,10 +13,13 @@ import Link from "next/link";
  import { ChangeEvent, useEffect, useState } from "react";
 import { RiArrowGoBackFill } from "react-icons/ri";
  
- function SchedulePage() {
- 
+function SchedulePage() {
+  const imageWidth = 220; // Set a reasonable width for your images
+  const imageHeight = 200;
+
    const [activeTab, setActiveTab] = useState(""); // Set initial active tab to "Monday"
    const [selectedDay, setSelectedDay] = useState(""); // Set initial selected day to "Monday"
+
  
    useEffect(() => {
      // Set the initial state for 'activeTab' and 'selectedDay' to "Monday" when the component mounts
@@ -30,37 +35,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Monday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Monday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Monday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Monday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Monday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Monday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
@@ -74,37 +103,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Tuesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Tuesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Tuesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Tuesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Tuesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Tuesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
@@ -118,37 +171,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
@@ -162,37 +239,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Thursday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Thursday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Thursday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Thursday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Thursday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Thursday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
@@ -206,37 +307,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Friday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Friday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Friday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Friday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Friday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Friday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
@@ -250,37 +375,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Saturday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Saturday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Saturday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Saturday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Saturday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Saturday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
@@ -294,37 +443,61 @@ import { RiArrowGoBackFill } from "react-icons/ri";
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Sunday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Sunday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Sunday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Sunday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Sunday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>
       <div className="dark:text-white text-center w-full">
         <h1>Program Name</h1>
-        <img src="management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
+        <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+          objectFit="cover"
+           src="/management/mosque.jpg" className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="Program 3" />
         <p>Time: Sunday, 9:00 AM - 10:30 AM</p>
         <p>Host: Hosts names goes here...</p>
       </div>

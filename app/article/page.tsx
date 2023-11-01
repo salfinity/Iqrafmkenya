@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import LiveTimeStamp from "../LiveTimeStamp";
 
@@ -19,7 +20,7 @@ function ArticlePage({ searchParams }: Props) {
   <article>
    <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10">
     {article.image && (
-     <img
+     <Image
      className="h-50 max-w-md mx-auto md:max-w-lg lg:max-w-xl 
      object-cover rounded-lg shadow-md"
      src={article.image}

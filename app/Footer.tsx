@@ -1,11 +1,11 @@
 "use client"
 
-import Link from 'next/link';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import { BsFacebook } from "react-icons/bs";
 
-function footer() {
+function Footer() {
   const router = useRouter();
   
 
@@ -36,9 +36,14 @@ function footer() {
    <div className="mx-auto max-w-screen-6xl border-t border-gray-100 mt-6 items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
      <div className="lg:flex items-center lg:items-center justify-between">
        <div className="grid grid-cols-1 md:grid-cols-3 ml-auto mx-auto justify-center text-teal-600">
-         <img
+         <Image
+           layout="fixed"
+           width={300}
+           height={300}
+           objectFit="cover"
            className="rounded-full w-32 ml-28 md:ml-0"
-           src='team/iqra.jpg'
+           src='/team/iqra.jpg'
+           alt=""
          />
  
        <p
@@ -317,5 +322,5 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import LiveTimeStamp from "./LiveTimeStamp";
 import ReadMoreButton from "./ReadMoreButton";
 
@@ -10,9 +11,11 @@ function Article({article}: Props) {
   shadow-lg hover:scale-105 hover:shadow-xl
   hover:bg-slate-200 transition-all duration-200 ease-out">
      {article.image && (
-      <img 
+      <Image 
           src={article.image}
-          alt={article.title} 
+          alt={article.title}
+          layout="fill"
+          objectFit="cover" 
           className="h-56 w-full object-cover rounded-t-lg shadow-md"
       />
      )}

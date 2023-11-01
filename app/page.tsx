@@ -1,29 +1,34 @@
 "use client";
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { categories } from "@/constants";
 import fetchNews from "@/lib/fetchNews";
 import NewsList from "./NewsList";
 import response from "@/response.json";
 import Footer from "./Footer";
 
-type Props = {
-  news: NewsResponse;
-};
-
-async function Homepage() {
+const Homepage = () => {
   const [showNews, setShowNews] = useState(false);
   const [news, setNews] = useState<NewsResponse | null>(null);
 
-  const loadNews = async () => {
-    //fetch news data
-    const fetchedNews: NewsResponse = await fetchNews(categories.join(","));
-    setNews(fetchedNews);
-  };
+  useEffect(() => {
+    const loadNews = async () => {
+      //fetch news data
+      const fetchedNews: NewsResponse = await fetchNews(categories.join(","));
+      setNews(fetchedNews);
+    };
+
+    if (showNews && !news) {
+      loadNews();
+    }
+  }, [showNews, news]);
 
   const filterNews = (category: string, news: Object) => {
     return news.filter((item: { category: string }) => item.category.toLowerCase() === category.toLowerCase());
   };
+
+  function loadNews() {
+    throw new Error("Function not implemented.");
+  }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
