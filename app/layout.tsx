@@ -1,5 +1,3 @@
-"use client"
-
 import '@/styles/globals.css';
 import Header from './Header';
 import Providers from './Providers';
