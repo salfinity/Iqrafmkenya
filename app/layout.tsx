@@ -21,8 +21,10 @@ export default function RootLayout({
           <body className='bg-gray-200 h-full dark:bg-zinc-900 transition-all
               duration-700'>
               <Header />
-              <div className='max-w-6xl h-1/2 justify-between mx-auto'>{children}</div>
-              
+              <div className='max-w-6xl h-1/2 justify-between mx-auto'>
+                {children}
+              </div>
+        
           </body>
        </Providers>  
     </html>
