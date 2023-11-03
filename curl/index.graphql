@@ -28,7 +28,6 @@ type Query {
     access_key: String
     countries: String
     categories: String
-    category: String
     limit: String
     offset: String
     sort: String

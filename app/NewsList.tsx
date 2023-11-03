@@ -1,7 +1,7 @@
 import Article from "./Article";
 
 type Props = {
- news: NewsResponse;
+ news: NewsResponse | null;
 };
 
 function NewsList({ news }: Props) {

@@ -1,10 +1,41 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { categories } from "@/constants";
 import fetchNews from "@/lib/fetchNews";
 import NewsList from "./NewsList";
-import response from "@/response.json";
 import Footer from "./Footer";
+
+type Category = string;
+
+type Pagination = {
+  count: number;
+  limit: number;
+  offset: number;
+  total: number;
+};
+
+type Article = {
+  author: string;
+  category: string;
+  country: string;
+  description: string;
+  image: string;
+  language: string;
+  published_at: string;
+  source: string;
+  title: string;
+  url: string;
+};
+
+type NewsResponse = {
+  pagination: Pagination | null;
+  data: Article[];
+};
+
+type Props = {
+  params: { category: Category };
+};
 
 const Homepage = () => {
   const [showNews, setShowNews] = useState(false);
@@ -12,23 +43,20 @@ const Homepage = () => {
 
   useEffect(() => {
     const loadNews = async () => {
-      //fetch news data
-      const fetchedNews: NewsResponse = await fetchNews(categories.join(","));
-      setNews(fetchedNews);
+      try {
+        // Fetch news data
+        const fetchedNews: NewsResponse = await fetchNews(categories.join(","));
+        setNews(fetchedNews);
+      } catch (error) {
+        // Handle errors (e.g., show an error message to the user)
+        console.error("Error fetching news:", error);
+      }
     };
 
     if (showNews && !news) {
       loadNews();
     }
   }, [showNews, news]);
-
-  const filterNews = (category: string, news: Object) => {
-    return news.filter((item: { category: string }) => item.category.toLowerCase() === category.toLowerCase());
-  };
-
-  function loadNews() {
-    throw new Error("Function not implemented.");
-  }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
@@ -38,11 +66,8 @@ const Homepage = () => {
       <button
         onClick={() => {
           setShowNews(!showNews);
-          if (!showNews) {
-            loadNews();
-          }
         }}
-        className="bg-rose-950 hover:bg-rose-800  text-white font-bold py-2 px-4 rounded mt-4"
+        className="bg-rose-950 hover:bg-rose-800 text-white font-bold py-2 px-4 rounded mt-4"
       >
         {showNews ? "Hide News" : "Show News"}
       </button>
@@ -50,6 +75,6 @@ const Homepage = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Homepage;

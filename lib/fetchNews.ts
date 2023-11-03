@@ -19,13 +19,17 @@ const fetchNews = async (
 
   //GraphQL query
    const query = gql`
-   query MyQuery (
+   query myQuery (
     $access_key: String!
+    $categories: String!
+    $keywords: String
    ) {
     myQuery(
      access_key: $access_key
-     countries: "ke, ksa"
+     categories: $categories
+     countries: "ke"
      sort: "published_desc"
+     keywords: $keywords
      ) {
       data {
         author

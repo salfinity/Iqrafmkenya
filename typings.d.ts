@@ -1,5 +1,4 @@
 type Article = {
- news: string;
  author: string | null;
  category: string;
  country: string;
