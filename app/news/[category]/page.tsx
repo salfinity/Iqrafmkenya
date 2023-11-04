@@ -14,7 +14,6 @@ type Pagination = {
 
 type Article = {
   author: string;
-  category: string;
   country: string;
   description: string;
   image: string;
