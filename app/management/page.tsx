@@ -25,7 +25,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           <div className="mb-12">
@@ -38,7 +38,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           <div className="mb-12">
@@ -51,7 +51,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           <div className="mb-12">
@@ -64,7 +64,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           <div className="mb-12">
@@ -77,7 +77,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           <div className="mb-12">
@@ -90,7 +90,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           <div className="mb-12">
@@ -103,7 +103,7 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">John Doe</p>
+            <p className="mb-2 font-bold">MaashaAllah</p>
             <p className="text-neutral-500 dark:text-neutral-300">President</p>
           </div>
           {/* ... Repeat this structure for other team members */}

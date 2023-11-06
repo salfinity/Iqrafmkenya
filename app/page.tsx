@@ -16,7 +16,8 @@ async function Homepage() {
               <span className="underline decoration-6 decoration-orange-400">LATEST</span> NEWS
             </h1>
           <NewsList news={news} />
-    </div>
+          <Footer />
+      </div>     
   );
 }
 

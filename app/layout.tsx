@@ -21,9 +21,8 @@ export default function RootLayout({
               duration-700'>
               <Header />
               <div className='max-w-6xl h-1/2 justify-between mx-auto'>
-                {children}
+                 {children}
               </div>
-            <Footer />
           </body>
        </Providers>  
     </html>

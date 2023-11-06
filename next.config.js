@@ -6,8 +6,9 @@ const nextConfig = {
   },
   images: {
     domains: [
-      "res.cloudinary.com"
-    ]
+      "res.cloudinary.com",
+      "cdn.standardmedia.co.ke",
+    ],
   },
 }
 

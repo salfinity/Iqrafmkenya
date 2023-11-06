@@ -36,7 +36,7 @@ function Header() {
 
     {/* navigation links */}
     
-    <h1 className='font-serif text-2xl md:text-4xl text-center mt-3'>
+    <h1 className='font-serif text-2xl md:text-4xl text-center mt-6'>
        <span className='underline decoration-6 
        decoration-orange-400'>CHECK OUT</span> {" "}
         NEWS</h1>
@@ -48,4 +48,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;
