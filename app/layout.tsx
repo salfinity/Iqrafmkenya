@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import Header from './Header';
 import Providers from './Providers';
+import Footer from './Footer';
 
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
               <div className='max-w-6xl h-1/2 justify-between mx-auto'>
                 {children}
               </div>
-        
+            <Footer />
           </body>
        </Providers>  
     </html>

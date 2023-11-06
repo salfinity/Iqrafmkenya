@@ -1,13 +1,14 @@
 import Image from "next/image";
-import LiveTimeStamp from "./LiveTimeStamp";
 import ReadMoreButton from "./ReadMoreButton";
+import LiveTimestamp from "./LiveTimestamp";
+
 
 type Props = {
  article: Article;
 }
 
 function Article({article}: Props) {
-  return <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg
+  return ( <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg
   shadow-lg hover:scale-105 hover:shadow-xl
   hover:bg-slate-200 transition-all duration-200 ease-out">
      {article.image && (
@@ -31,7 +32,7 @@ function Article({article}: Props) {
        pt-5 italic text-gray-400">
         <p>{article.source} -</p>
         <p>
-         <LiveTimeStamp time={article.published_at} />
+         <LiveTimestamp time={article.published_at} />
          </p>
        </footer>
       </div>
@@ -39,7 +40,8 @@ function Article({article}: Props) {
       {/* read more Button */}
       <ReadMoreButton article={article}/>
      </div>
-    </article>;
+    </article>
+  );
 }
 
 export default Article;

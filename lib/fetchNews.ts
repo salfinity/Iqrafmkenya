@@ -1,25 +1,13 @@
 import { gql } from "graphql-request"
 import sortNewsByImage from "./sortNewsByImage";
 
-type Props = {
-  category: string;
-  keywords: string; 
- };
-
 const fetchNews = async (
  category?: Category | string,
  keywords?: string,
  isDynamic?: boolean
 ) => {
-
-
-  console.log('category');
-  console.log(category); 
-  console.log('-----cccccc-----');
-
-  //GraphQL query
-   const query = gql`
-   query myQuery (
+  const query= gql `
+   query MyQuery(
     $access_key: String!
     $categories: String!
     $keywords: String
@@ -30,7 +18,7 @@ const fetchNews = async (
      countries: "ke"
      sort: "published_desc"
      keywords: $keywords
-     ) {
+    ) {
       data {
         author
         category
@@ -39,7 +27,6 @@ const fetchNews = async (
         image
         language
         published_at
-        source
         title
         url
       }
@@ -51,57 +38,38 @@ const fetchNews = async (
       }
     }
   }
-  `;
+`;
+const res = await fetch('https://aubenas.stepzen.net/api/gaudy-goose/__graphql', {
+  method: 'POST',
+  cache: isDynamic ? "no-cache" : "default",
+  next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
+ },
+ body: JSON.stringify({
+  query,
+  variables: {
+   access_key: process.env.MEDIASTACK_API_KEY,
+   categories: category,
+   keywords: keywords
+   },
+  }),
+ }
+);
 
-   //fetch function Next.js 13 caching...
-   const res = await fetch('https://bannayang.stepzen.net/api/winning-wolverine/__graphql', {
-    method: 'POST',
-    // cache: isDynamic ? "no-cache" : "default",
-    next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
-    headers: {
-       "Content-Type": "application/json",
-       Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
-    },
-    body: JSON.stringify({
-     query,
-     variables: {
-      access_key: process.env.MEDIASTACK_API_KEY,
-      category: category,
-      keywords: keywords
-     },
-    }),
-   }
-   );
+console.log(
+  "LOADING NEW DATA FROM API for category >>>",
+  category,
+  keywords
+ );
 
+ const newsResponse = await res.json(); 
 
-   console.log(
-    "LOADING NEW DATA FROM API for category >>>",
-    category,
-    keywords
-   );
+ const news = sortNewsByImage(newsResponse.data.myQuery);
 
-   
-   
-   
-   const newsResponse = await res.json(); 
-   console.log('res---------->');
-   console.log(newsResponse?.data?.myQuery?.data)
-  //  console.log(res)
-  //  console.log(res) 
-    // Sort news only if 'myQuery' exists in the response
+ return news;
 
-    let news; 
-    if (!newsResponse.data) {
-      console.log('no data return empty object');
-      news  = {pagination :null, data: []};
-      return news;
-    }
-
-   news = sortNewsByImage(newsResponse.data.myQuery);
-    
-   return news;
-  }
-
-
+};
 export default fetchNews;
-//stepzen import curl "http://api.mediastack.com/v1/news?access_key=9d1ed089dd488078f5e0ad043e4763d4&countries=us%2Cgb&limit=100&offset=0&sort=published_desc"
+//stepzen import curl "http://api.mediastack.com/v1/news?access_key=abc&sources=business,sports"

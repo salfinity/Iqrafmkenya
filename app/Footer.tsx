@@ -33,7 +33,7 @@ function Footer() {
 
 
   return (  
-   <div className="mx-auto max-w-screen-6xl border-t border-gray-100 mt-6 items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
+   <div className="mx-auto max-w-6xl border-t border-gray-100 mt-6 items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
      <div className="lg:flex items-center lg:items-center justify-between">
        <div className="grid grid-cols-1 md:grid-cols-3 ml-auto mx-auto justify-center text-teal-600">
          <Image
