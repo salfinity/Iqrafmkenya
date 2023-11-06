@@ -6,8 +6,8 @@ type Props = {
  time: string;
 };
 
-function LiveTimestamp({ time }: Props) {
+function LiveTimeStamp({ time }: Props) {
   return  <TimeAgo date={time} />   
 }
 
-export default LiveTimestamp;
+export default LiveTimeStamp;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ReadMoreButton from "./ReadMoreButton";
-import LiveTimestamp from "./LiveTimestamp";
+import LiveTimeStamp from "./LiveTimestamp";
 
 
 type Props = {
@@ -32,7 +32,7 @@ function Article({article}: Props) {
        pt-5 italic text-gray-400">
         <p>{article.source} -</p>
         <p>
-         <LiveTimestamp time={article.published_at} />
+         <LiveTimeStamp time={article.published_at} />
          </p>
        </footer>
       </div>
