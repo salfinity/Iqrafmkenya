@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ReadMoreButton from "./ReadMoreButton";
-import LiveTimeStamp from "./LiveTimestamp";
+import LiveTimeStamp from "./LiveTimeStamp";
 
 
 type Props = {
