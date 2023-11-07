@@ -11,12 +11,13 @@ async function Homepage() {
     
     console.log(news)
       
-  return ( <div className="flex flex-col items-center justify-center min-h-screen">
-            <h1 className="font-serif text-2xl md:text-4xl mt-3">
-              <span className="underline decoration-6 decoration-orange-400">LATEST</span> NEWS
-            </h1>
-          <NewsList news={news} />
-          <Footer />
+  return (
+     <div className="flex flex-col items-center justify-center min-h-screen">
+          <h1 className="font-serif text-2xl md:text-4xl mt-3">
+            <span className="underline decoration-6 decoration-orange-400">LATEST</span> NEWS
+          </h1>
+        <NewsList news={news} />
+        <Footer /> 
       </div>     
   );
 }

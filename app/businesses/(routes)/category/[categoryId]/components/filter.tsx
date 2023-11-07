@@ -3,9 +3,9 @@
 import qs from "query-string";
 import { useRouter, useSearchParams } from "next/navigation";
 
-import Button from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Color, Size } from "@/types";
+import { Button } from "@/components/ui/button";
 
 interface FilterProps {
   data: (Size | Color)[];
@@ -19,13 +19,13 @@ const Filter: React.FC<FilterProps> = ({
   valueKey,
 }) => {
   const router = useRouter();
-  
+
   const searchParams = useSearchParams();
 
-    if (!searchParams) {
-      // Handle the null case, e.g., by setting a default value or returning early
-      return null;
-    }
+  if (!searchParams) {
+    // Handle the null case, e.g., by setting a default value or returning early
+    return null;
+  }
 
   // Now you can safely access searchParams properties and methods
   const selectedValue = searchParams.get(valueKey);
@@ -51,7 +51,7 @@ const Filter: React.FC<FilterProps> = ({
     router.push(url);
   }
 
-  return ( 
+  return (
     <div className="mb-8">
       <h3 className="text-lg font-semibold">
         {name}

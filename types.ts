@@ -5,6 +5,8 @@ export interface Billboard {
 };
 
 export interface Category {
+ label: ReactNode;
+ href: any;
  id: string;
  name: string;
  billboard: Billboard;

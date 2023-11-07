@@ -16,6 +16,8 @@ function ArticlePage({ searchParams }: Props) {
   }
 
   const article: Article = searchParams;
+  const imageWidth = 500; // Set a reasonable width for your images
+  const imageHeight = 224; 
 
   return ( 
   <article>
@@ -26,6 +28,8 @@ function ArticlePage({ searchParams }: Props) {
      object-cover rounded-lg shadow-md"
      src={article.image}
      alt={article.title}
+     width={imageWidth}
+     height={imageHeight}
      />
     )}
 

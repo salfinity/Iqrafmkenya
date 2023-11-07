@@ -10,14 +10,14 @@ const Navbar = async () => {
 
   return ( 
     <div className="container">
-       <h1 className='font-serif text-2xl md:text-4xl text-center mt-3 mb-6'>
+       <h1 className='font-serif text-2xl md:text-4xl text-center mt-6 mb-6'>
        <span className='underline decoration-6 
        decoration-orange-400'>WELCOME TO</span> {" "}
         IQRA BIASHARA</h1>
         <div className="border-b">
             <Container>
               <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
-                <Link href="/businesses" className="ml-4 flex lg:ml-0 gap-x-2">
+                <Link href="/businesses" className="ml-2 flex lg:ml-0 gap-x-2">
                   <p className="font-bold text-xl">STORE</p>
                 </Link>
                 <MainNav data={categories} />

@@ -8,16 +8,21 @@ type Props = {
 }
 
 function Article({article}: Props) {
-  return <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg
-  shadow-lg hover:scale-105 hover:shadow-xl
+  const imageWidth = 450; // Set a reasonable width for your images
+  const imageHeight = 224; 
+  return ( 
+  <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-md
+  shadow-lg hover:scale-105 hover:shadow-xl 
   hover:bg-slate-200 transition-all duration-200 ease-out">
      {article.image && (
       <Image 
           src={article.image}
           alt={article.title}
-          layout="fill"
-          objectFit="cover" 
-          className="h-56 w-full object-cover rounded-t-lg shadow-md"
+          layout="fixed"
+          objectFit="cover"
+          width={imageWidth}
+          height={imageHeight} 
+          className="h-56 rounded-t-lg shadow-md"
       />
      )}
      <div className="flex-1 flex flex-col">
@@ -41,7 +46,7 @@ function Article({article}: Props) {
       <ReadMoreButton article={article}/>
      </div>
     </article>
-  ;
+  );
 }
 
 export default Article;

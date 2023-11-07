@@ -42,7 +42,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
 
   return (
   
-          <div className="bg-white">
+          <div className="bg-none">
         
               <Navbar />  
               <Container>
