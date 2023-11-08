@@ -14,14 +14,18 @@ const Summary = () => {
   const items = useCart((state) => state.items);
   const removeAll = useCart((state) => state.removeAll);
 
+  console.log('searchParams');
+  console.log(searchParams);
   useEffect(() => {
-    if (searchParams.get('success')) {
-      toast.success('Payment completed.');
-      removeAll();
-    }
+    if (searchParams) {
+      if (searchParams.get('success')) {
+        toast.success('Payment completed.');
+        removeAll();
+      }
 
-    if (searchParams.get('canceled')) {
-      toast.error('Something went wrong.');
+      if (searchParams.get('canceled')) {
+        toast.error('Something went wrong.');
+      }
     }
   }, [searchParams, removeAll]);
 
