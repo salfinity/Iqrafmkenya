@@ -9,6 +9,10 @@ import { Button } from "@/components/ui/button";
 const Summary = () => {
   const searchParams = useSearchParams();
   const items = useCart((state) => state.items);
+
+  if (!items) {
+      return;
+  }
   const removeAll = useCart((state) => state.removeAll);
 
   useEffect(() => {
