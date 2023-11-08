@@ -18,9 +18,6 @@ function Footer() {
   const handleScholarsClick = () => {
     router.push('/scholars'); 
   };
-  const handleScheduleClick = () => {
-    router.push('/schedule'); 
-  };
   const handleAdvertClick = () => {
     router.push('/adverts'); 
   };
@@ -153,8 +150,7 @@ function Footer() {
            
          <li>
               <a
-                className="text-gray-700 cursor-pointer transition dark:text-white hover:text-gray-700/75"
-                onClick={handleScheduleClick}
+                className="text-gray-700 cursor-pointer transition dark:text-white hover:text-gray-700/75"  
               >
                 Weekly schedule
               </a>
