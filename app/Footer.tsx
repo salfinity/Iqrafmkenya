@@ -65,7 +65,7 @@ function Footer() {
  
      <div className="mt-16 grid gap-16 border-t border-gray-100 pt-16 grid-cols-2 md:grid-cols-6">
       <div className="grid col-span-1 md:col-span-2">
-        <div className="text-center grid sm:text-left">
+        <div className="grid text-left md:text-center">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">About Us</p>
           <ul className="mt-8 space-y-4 text-sm">
             <li>
@@ -92,7 +92,7 @@ function Footer() {
         </div>
       </div>
       <div className="grid col-span-1 md:col-span-2">
-        <div className="text-center grid sm:text-left">
+        <div className="grid text-left md:text-center">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Our Services</p>
           <ul className="mt-8 space-y-4 text-sm">
             <li>
@@ -124,7 +124,7 @@ function Footer() {
         </div>
       </div>
       <div className="grid col-span-1 md:col-span-2">
-        <div className="text-center grid sm:text-left">
+        <div className="grid text-left md:text-center">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">Resources</p>
           <ul className="mt-8 space-y-4 text-sm">
             <li>
@@ -146,7 +146,7 @@ function Footer() {
         </div>
       </div>
       <div className="grid col-span-1 md:col-span-2">
-        <div className="text-center grid sm:text-left">
+        <div className="grid text-left md:text-center">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Helpful Links</p>
           <ul className="mt-8 space-y-4 text-sm">
             <li>
