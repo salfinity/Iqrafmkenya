@@ -63,8 +63,8 @@ function Footer() {
        </div> 
      </div>
  
-     <div className="mt-16 grid gap-16 border-t border-gray-100 pt-16 md:grid-cols-6 lg:grid-cols-6">
-      <div className="md:col-span-2 lg:col-span-1">
+     <div className="mt-16 grid gap-16 border-t border-gray-100 pt-16 grid-cols-2 md:grid-cols-6">
+      <div className="grid col-span-1 md:col-span-2">
         <div className="text-center grid sm:text-left">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">About Us</p>
           <ul className="mt-8 space-y-4 text-sm">
@@ -91,7 +91,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="md:col-span-2 lg:col-span-1">
+      <div className="grid col-span-1 md:col-span-2">
         <div className="text-center grid sm:text-left">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Our Services</p>
           <ul className="mt-8 space-y-4 text-sm">
@@ -123,7 +123,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="md:col-span-2 lg:col-span-1">
+      <div className="grid col-span-1 md:col-span-2">
         <div className="text-center grid sm:text-left">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">Resources</p>
           <ul className="mt-8 space-y-4 text-sm">
@@ -145,7 +145,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="md:col-span-2 lg:col-span-1">
+      <div className="grid col-span-1 md:col-span-2">
         <div className="text-center grid sm:text-left">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Helpful Links</p>
           <ul className="mt-8 space-y-4 text-sm">
@@ -171,7 +171,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="md:col-span-2 lg:col-span-4">
+      <div className="grid col-span-2 md:col-span-2">
         <div className="text-center md:text-left items-center">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Stay in Touch</p>
           <div className="mx-auto mt-4 max-w-md sm:ms-0">
