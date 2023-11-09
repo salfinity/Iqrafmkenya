@@ -116,7 +116,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" href="/">
+              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" >
                 Donations
               </a>
             </li>
