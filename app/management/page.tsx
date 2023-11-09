@@ -10,7 +10,7 @@ function Page() {
   return (
     <div className="container items-center my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
-        <h1 className='font-serif text-4xl text-center mt-3 mb-5'>
+        <h1 className='font-serif md:text-4xl text-2xl text-center mt-3 mb-5'>
           <span className='underline decoration-6 decoration-orange-400'>MANAGE</span> MENT
         </h1>
 
