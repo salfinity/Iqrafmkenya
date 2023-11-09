@@ -96,7 +96,7 @@ function Footer() {
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Our Services</p>
           <ul className="mt-4 space-y-4 text-sm">
             <li>
-              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" href="">
+              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" >
                 News
               </a>
             </li>
@@ -150,12 +150,12 @@ function Footer() {
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Helpful Links</p>
           <ul className="mt-4 space-y-4 text-sm">
             <li>
-              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" href="">
+              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" >
                 FAQs
               </a>
             </li>
             <li>
-              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" href="">
+              <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" >
                 Support
               </a>
             </li>
