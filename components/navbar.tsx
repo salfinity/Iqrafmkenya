@@ -16,7 +16,7 @@ const Navbar = async () => {
         IQRA BIASHARA</h1>
         <div className="border-b">
             <Container>
-              <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
+              <div className="relative px-2 sm:px-2 lg:px-6 flex h-16 items-center">
                 <Link href="/businesses" className="ml-0 flex lg:ml-0 gap-x-2">
                   <p className="font-bold text-xl">STORE</p>
                 </Link>
