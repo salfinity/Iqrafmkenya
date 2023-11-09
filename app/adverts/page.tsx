@@ -15,9 +15,9 @@ function AdvertsPage() {
 
   return (
     <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-      <h1 className='font-serif text-4xl text-center mt-2 mb-5'>
+      <h1 className='font-serif md:text-4xl text-2xl text-center mt-2 mb-5'>
        <span className='underline decoration-6 
-       decoration-orange-400 md:text-4xl text-2xl'>ADVERTISE</span> 
+       decoration-orange-400 '>ADVERTISE</span> 
         MENTS</h1>
          <div className='max-w-[1240px] m-auto w-full py-16'>
            <div className='grid md:grid-cols-2 gap-8'>
