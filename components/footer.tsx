@@ -4,9 +4,10 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
  return (
-   <footer className="bg-none mr-6 ml-6">
+   <footer className="bg-none">
      <div
-       className="mt-3 mb-3 border-b border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between"
+       className="mt-3 mb-3 border-b border-t border-gray-100 pt-6 
+       mr-6 ml-6 sm:flex sm:items-center sm:justify-between"
      >
        <p className="text-center text-xs font-semibold text-black dark:text-white">
          &copy; 2023 Iqrabiashara Store, Inc. All rights reserved.
