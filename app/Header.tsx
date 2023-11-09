@@ -14,8 +14,8 @@ function Header() {
      <Link href="/" prefetch={false}>
       <h1 className='font-serif text-xl md:text-4xl text-center'>
        <span className='underline decoration-6 
-       decoration-orange-400'>IQRA-FM</span> {" "}
-        Kenya</h1>
+       decoration-orange-400'>IQRA-</span> 
+        FM</h1>
      </Link>
 
      <div className='flex items-center justify-end
