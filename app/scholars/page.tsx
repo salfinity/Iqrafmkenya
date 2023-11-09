@@ -9,7 +9,7 @@ function ScholarsPage() {
 
 
   return (
-   <div className="container my-24 mx-auto md:px-6">
+   <div className="container mt-3 mx-auto md:px-6">
    <section className="mb-32 text-center">
    <h1 className='font-serif text-2xl md:text-4xl text-center mt-3 mb-10'>
        <span className='underline decoration-6 
