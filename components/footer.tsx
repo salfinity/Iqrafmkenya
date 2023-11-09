@@ -18,7 +18,7 @@ const Footer = () => {
              href="https://www.facebook.com/IdhaaIliotofauti/"
              rel="noreferrer"
              target="_blank"
-             className="text-teal-700 transition hover:text-teal-700/75"
+             className="text-orange-700 transition hover:text-orange-700/75"
            >
              <span className="sr-only">Facebook</span>
              <IoLogoWhatsapp
@@ -34,7 +34,7 @@ const Footer = () => {
              href="https://www.facebook.com/IdhaaIliotofauti/"
              rel="noreferrer"
              target="_blank"
-             className="text-teal-700 transition hover:text-teal-700/75"
+             className="text-orange-700 transition hover:text-orange-700/75"
            >
              <span className="sr-only">Facebook</span>
              <BsFacebook
@@ -51,7 +51,7 @@ const Footer = () => {
              href="https://www.instagram.com/iqrafm/?hl=es-la"
              rel="noreferrer"
              target="_blank"
-             className="text-teal-700 transition hover:text-teal-700/75"
+             className="text-orange-700 transition hover:text-orange-700/75"
            >
              <span className="sr-only">Instagram</span>
              <AiFillInstagram
@@ -68,7 +68,7 @@ const Footer = () => {
              href="https://twitter.com/iqrafm?lang=en"
              rel="noreferrer"
              target="_blank"
-             className="text-teal-700 transition hover:text-teal-700/75"
+             className="text-orange-700 transition hover:text-orange-700/75"
            >
              <span className="sr-only">Twitter</span>
              <AiFillTwitterCircle
