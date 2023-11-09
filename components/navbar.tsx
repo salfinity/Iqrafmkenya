@@ -14,7 +14,7 @@ const Navbar = async () => {
        <span className='underline decoration-6 
        decoration-orange-400'>WELCOME TO</span> {" "}
         IQRA BIASHARA</h1>
-        <div className="border-b max-w-6xl">
+        <div className="border-b max-w-full">
             <Container>
               <div className="relative px-2 sm:px-2 lg:px-6 flex h-16 items-center">
                 <Link href="/businesses" className="ml-0 mr-auto flex lg:ml-0 gap-x-2">
