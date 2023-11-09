@@ -63,11 +63,11 @@ function Footer() {
        </div> 
      </div>
  
-     <div className="mt-16 grid gap-16 border-t border-gray-100 pt-16 grid-cols-2 md:grid-cols-6">
+     <div className="mt-10 grid gap-16 border-t border-gray-100 pt-16 grid-cols-2 md:grid-cols-6">
       <div className="grid col-span-1 md:col-span-1">
         <div className="grid text-left md:text-left">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">About Us</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-4 space-y-4 text-sm">
             <li>
               <a className="text-gray-700 transition dark:text-white hover:text-gray-700/75" onClick={handleHistoryClick}>
                 Company History
@@ -94,7 +94,7 @@ function Footer() {
       <div className="grid col-span-1 md:col-span-1">
         <div className="grid text-left md:text-left">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Our Services</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-4 space-y-4 text-sm">
             <li>
               <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" href="">
                 News
@@ -126,7 +126,7 @@ function Footer() {
       <div className="grid col-span-1 md:col-span-1">
         <div className="grid text-left md:text-left">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">Resources</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-4 space-y-4 text-sm">
             <li>
               <a className="text-gray-700 cursor-pointer transition dark:text-white hover:text-gray-700/75">
                 Weekly Schedule
@@ -148,7 +148,7 @@ function Footer() {
       <div className="grid col-span-1 md:col-span-1">
         <div className="grid text-left md:text-left">
           <p className="text-lg font-medium dark:text-orange-400 text-gray-900">Helpful Links</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-4 space-y-4 text-sm">
             <li>
               <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75" href="">
                 FAQs
