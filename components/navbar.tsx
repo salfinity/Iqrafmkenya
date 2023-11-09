@@ -9,12 +9,12 @@ const Navbar = async () => {
   const categories = await getCategories();
 
   return ( 
-    <div className="container max-w-6xl">
+    <div className="container">
        <h1 className='font-serif text-2xl md:text-4xl text-center mt-6 mb-6'>
        <span className='underline decoration-6 
        decoration-orange-400'>WELCOME TO</span> {" "}
         IQRA BIASHARA</h1>
-        <div className="border-b">
+        <div className="border-b max-w-6xl">
             <Container>
               <div className="relative px-2 sm:px-2 lg:px-6 flex h-16 items-center">
                 <Link href="/businesses" className="ml-0 flex lg:ml-0 gap-x-2">
