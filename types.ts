@@ -5,7 +5,7 @@ export interface Billboard {
 };
 
 export interface Category {
- href(href: any): unknown;
+ href: string;
  id: string;
  name: string;
  billboard: Billboard;

@@ -1,5 +1,5 @@
-"use client";
-
+"use client"
+// Import necessary modules and components
 import * as React from "react";
 import Link from "next/link";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -9,36 +9,54 @@ import { cn } from "@/lib/utils";
 import { Category } from "@/types";
 import { usePathname, useRouter } from "next/navigation";
 
+// Define MainNavProps interface
 interface MainNavProps {
   data: Category[];
 }
 
+// MainNav component
 const MainNav: React.FC<MainNavProps> = ({ data }) => {
   const pathname = usePathname();
   const router = useRouter(); // Use the useRouter hook
 
+  // Create an array of routes based on the provided data
   const routes = data.map((route) => ({
     href: `/businesses/category/${route.id}`,
     label: route.name,
     active: pathname === `/businesses/category/${route.id}`,
   }));
 
+  // State variables for the popover
   const [open, setOpen] = React.useState(false);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [selectedCategory, setSelectedCategory] = React.useState<Category | null>(null);
 
+  // Filter the routes based on the search query
   const filteredRoutes = routes.filter((route) =>
     route.label.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Handle category selection and route navigation
   const handleCategorySelect = (route: { href: string; label: string }) => {
-    setSelectedCategory(route);
+    const selectedCategory: Category = {
+      href: route.href,
+      id: '', // replace with the actual id
+      name: route.label,
+      billboard: {
+        id: "",
+        label: "",
+        imageUrl: ""
+      } // replace with the actual Billboard
+    };
+  
+    setSelectedCategory(selectedCategory);
     setOpen(false);
-
+  
     // Navigate to the selected category's route
     router.push(route.href);
   };
-
+  
+  // Return the JSX structure for the component
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
@@ -100,4 +118,5 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   );
 };
 
+// Export the MainNav component
 export default MainNav;
