@@ -4,16 +4,10 @@ import MainNav from "@/components/main-nav";
 import Container from "@/components/ui/container";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
-import { useRouter } from "next/router";
 
 const Navbar = async () => {
   const categories = await getCategories();
-  const router = useRouter();
-
-  const handleBusinessClick = () => {
-    router.push('/businesses'); 
-  };
-
+  
 
   return ( 
     <div className="max-w-7xl">
@@ -24,7 +18,7 @@ const Navbar = async () => {
         <div className="border-b max-w-full">
             <Container>
               <div className="relative px-2 sm:px-2 lg:px-6 flex h-16 items-center">
-                <Link onClick={handleBusinessClick} href="" className="ml-0 mr-auto flex lg:ml-0 gap-x-2">
+                <Link  href="" className="ml-0 mr-auto flex lg:ml-0 gap-x-2">
                   <p className="font-bold text-xl">STORE</p>
                 </Link>
                 <MainNav data={categories} />
