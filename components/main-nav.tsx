@@ -63,21 +63,21 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <nav className="mx-6 flex items-center space-x-4 ml-auto mr-auto lg:space-x-6">
+        <nav className="mx-6 text-xl flex items-center justify-center space-x-4 ml-auto mr-auto lg:space-x-6">
           <button
             className={cn(
-              "text-sm flex font-medium transition-colors hover:text-gray-600 focus:outline-none",
+              "text-xl flex font-medium transition-colors hover:text-gray-600 focus:outline-none",
               open ? "text-gray-500" : "text-neutral-600"
             )}
             onClick={() => setOpen(!open)}
           >
              {selectedCategory ? selectedCategory.name : "Categories"}
-            <ChevronsUpDown className="ml-1 h-4 w-4 opacity-50" />
+            <ChevronsUpDown className="flex ml-3 h-6 w-6 opacity-50" />
           </button>
         </nav>
       </PopoverTrigger>
       {open && (
-         <PopoverContent className="w-[200px] p-3 rounded-lg bg-white dark:bg-slate-800" style={{ maxHeight: '250px', overflowY: 'auto' }}>
+         <PopoverContent className="w-[210px] p-5 rounded-lg bg-white dark:bg-slate-800" style={{ maxHeight: '500px', overflowY: 'auto' }}>
          <Command>
            <CommandList>
              <CommandItem className="justify-center">
