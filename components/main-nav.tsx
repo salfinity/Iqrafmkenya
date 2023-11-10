@@ -26,15 +26,18 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
     active: pathname === `/businesses/category/${route.id}`,
   }));
 
+  // Sort the routes alphabetically by label
+  const sortedRoutes = [...routes].sort((a, b) => a.label.localeCompare(b.label));
+
   // State variables for the popover
   const [open, setOpen] = React.useState(false);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [selectedCategory, setSelectedCategory] = React.useState<Category | null>(null);
 
   // Filter the routes based on the search query
-  const filteredRoutes = routes.filter((route) =>
-    route.label.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredRoutes = sortedRoutes.filter((route) =>
+  route.label.toLowerCase().includes(searchQuery.toLowerCase())
+);
 
   // Handle category selection and route navigation
   const handleCategorySelect = (route: { href: string; label: string }) => {
@@ -77,7 +80,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
          <PopoverContent className="w-[200px] p-3 rounded-lg bg-white dark:bg-slate-800" style={{ maxHeight: '250px', overflowY: 'auto' }}>
          <Command>
            <CommandList>
-             <CommandItem>
+             <CommandItem className="justify-center">
                <input
                  type="text"
                  placeholder="Search category..."
