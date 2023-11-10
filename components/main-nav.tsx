@@ -68,51 +68,54 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
             )}
             onClick={() => setOpen(!open)}
           >
-            Categories
+             {selectedCategory ? selectedCategory.name : "Categories"}
             <ChevronsUpDown className="ml-1 h-4 w-4 opacity-50" />
           </button>
         </nav>
       </PopoverTrigger>
       {open && (
-        <PopoverContent className="w-[200px] p-0 rounded-lg bg-white dark:bg-slate-800" style={{ maxHeight: '300px', overflowY: 'auto' }}>
-          <Command>
-            <CommandList>
-              <CommandItem>
-                <CommandEmpty>No categories found.</CommandEmpty>
-              </CommandItem>
-              <CommandGroup heading="Categories">
-                <CommandItem>
-                  <input
-                    type="text"
-                    placeholder="Search category..."
-                    className="w-full p-2 border rounded"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                  />
-                </CommandItem>
-                {filteredRoutes.map((route) => (
-                  <CommandItem
-                    key={route.href}
-                    onSelect={() => handleCategorySelect(route)}
-                    className="text-sm"
-                  >
-                    {route.label}
-                    {selectedCategory?.href === route.href && <Check className="ml-auto h-4 w-4" />}
-                  </CommandItem>
-                ))}
-              </CommandGroup>
-            </CommandList>
-            <CommandSeparator />
-            <CommandList>
-              <CommandGroup>
-                <CommandItem onClick={() => setOpen(false)}>
-                  <PlusCircle className="mr-2 h-5 w-5" />
-                  Create Category
-                </CommandItem>
-              </CommandGroup>
-            </CommandList>
-          </Command>
-        </PopoverContent>
+         <PopoverContent className="w-[200px] p-3 rounded-lg bg-white dark:bg-slate-800" style={{ maxHeight: '250px', overflowY: 'auto' }}>
+         <Command>
+           <CommandList>
+             <CommandItem>
+               <input
+                 type="text"
+                 placeholder="Search category..."
+                 className="w-[180px] p-2 border rounded fixed bg-neutral-300 dark:bg-slate-900 z-10"
+                 value={searchQuery}
+                 onChange={(e) => setSearchQuery(e.target.value)}
+               />
+             </CommandItem>
+             <CommandSeparator />
+             <CommandItem>
+               <div style={{ paddingTop: '40px', overflowY: 'auto', height: 'calc(100% - 50px)' }}>
+                 {/* Scrollable category content here */}
+                 <CommandGroup heading="CATEGORIES" >
+                   {filteredRoutes.map((route) => (
+                     <CommandItem
+                       key={route.href}
+                       onSelect={() => handleCategorySelect(route)}
+                       className="text-sm"
+                     >
+                       {route.label}
+                       {selectedCategory?.href === route.href && <Check className="ml-auto h-4 w-4" />}
+                     </CommandItem>
+                   ))}
+                 </CommandGroup>
+               </div>
+             </CommandItem>
+           </CommandList>
+           <CommandSeparator />
+           <CommandList>
+             <CommandGroup>
+               <CommandItem onClick={() => setOpen(false)}>
+                 <PlusCircle className="mr-2 h-5 w-5" />
+                 Create Category
+               </CommandItem>
+             </CommandGroup>
+           </CommandList>
+         </Command>
+       </PopoverContent>
       )}
     </Popover>
   );
