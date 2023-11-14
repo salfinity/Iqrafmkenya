@@ -19,7 +19,7 @@ const HomePage = async () => {
 
 
   return (
-  <div className="container">
+  <div className="container max-w-7xl">
     <ToastProvider />
     <ModalProvider />    
     <Navbar />   

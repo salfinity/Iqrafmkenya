@@ -27,7 +27,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({
   
   return (
     
-        <div className="bg-white dark:bg-slate-900">         
+        <div className="bg-white dark:bg-slate-900 justify-center mx-auto max-w-6xl">         
             <Navbar />  
             <Container>
               <div className="px-4 py-10 sm:px-6 lg:px-8">

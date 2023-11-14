@@ -18,9 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <Providers>
           <body className='bg-gray-200 h-full dark:bg-zinc-900 transition-all
-              duration-700'>
+              duration-700 items-center'>
               <Header />
-              <div className='max-w-6xl h-1/2 justify-between mx-auto'>
+              <div className='max-w-full h-1/2 justify-center items-center mx-auto'>
                  {children}
               </div>
               <Footer />

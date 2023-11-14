@@ -46,15 +46,16 @@ function Footer() {
        <p
          className="mt-4 max-w-sm md:max-w-md text-center leading-relaxed text-gray-500 dark:text-white  mr-auto"
        >
-        Kilimani Rd, off ElgeyoMarakwet Rd near Adams Arcade
-        | P.O.Box 21186-00505, Nairobi |Tel 3861555 
+        At Masjid Al-Huda - South B
+        MRQQ+WVR, Aoko Rd, Nairobi
+        | Phone•0721 116591|IqraFM Tel 3861555 
         | Fax 3861543 www.iqra.co.ke 
         | Copyright All rights reserved
        </p>
 
         <iframe 
          className='items-center mt-4 md:mt-0 ml-14 md:ml-auto'
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3988.774978092707!2d36.831182774614796!3d-1.310339798677215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1692916984222!5m2!1sen!2ske" 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.10123905002!2d36.839656!3d-1.3101315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a778e3c841%3A0xcb7b083704c07fc7!2sMasjid%20Al-Huda%20-%20South%20B!5e0!3m2!1sen!2ske!4v1699994265643!5m2!1sen!2ske"
           width="250" 
           height="150" 
           loading="lazy" 
@@ -63,7 +64,7 @@ function Footer() {
        </div> 
      </div>
  
-     <div className="mt-10 grid gap-16 border-t border-gray-100 pt-16 grid-cols-2 md:grid-cols-6">
+     <div className="mt-10 justify-center grid gap-16 border-t border-gray-100 pt-16 grid-cols-2 md:grid-cols-6">
       <div className="grid col-span-1 md:col-span-1">
         <div className="grid text-left md:text-left">
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">About Us</p>
