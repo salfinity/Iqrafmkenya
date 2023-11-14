@@ -6,12 +6,14 @@ type Props = {
 
 function NewsList({ news }: Props) {
   return ( 
-   <main className="max-w-7xl mx-auto grid h-3/4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+   <div className="max-w-7xl mx-auto" >
+   <main className="grid h-3/4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4
    p-10 gap-10"> 
     {news.data.map((article) => (
       <Article key={article.title} article={article} />
     ))}
    </main>
+   </div> 
    );
  }
 
