@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 function qytPage () {
   return (
-    <div className='max-w-6xl'>
+    <div className='mx-auto max-w-6xl'>
       <div className='max-w-6xl h-[50vh] relative'>
         <div className='absolute top-0 left-0 max-w-6xl h-[50vh] bg-black/70 z-10' />
         <Image

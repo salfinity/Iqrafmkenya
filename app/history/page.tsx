@@ -11,7 +11,7 @@ import { AiFillTwitterSquare } from 'react-icons/ai';
 
 function HistoryPage () {
   return (
-    <div className='max-w-6xl'>
+    <div className='mx-auto max-w-6xl'>
      <h1 className='font-serif text-2xl md:text-4xl text-center mb-5 mt-3'>
          <span className='underline decoration-6 
          decoration-orange-300'>COMPANY</span> {" "}

@@ -8,8 +8,8 @@ type Props = {
 }
 
 function Article({article}: Props) {
-  const imageWidth = 450; // Set a reasonable width for your images
-  const imageHeight = 224; 
+  const imageWidth = 300; // Set a reasonable width for your images
+  const imageHeight = 150; 
   return ( 
   <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-md
   shadow-lg hover:scale-105 hover:shadow-xl 

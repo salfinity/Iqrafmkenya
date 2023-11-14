@@ -70,7 +70,7 @@ function Footer() {
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">About Us</p>
           <ul className="mt-4 space-y-4 text-sm">
             <li>
-              <a className="text-gray-700 transition dark:text-white hover:text-gray-700/75" onClick={handleHistoryClick}>
+              <a className="text-gray-700 cursor-pointer transition dark:text-white hover:text-gray-700/75" onClick={handleHistoryClick}>
                 Company History
               </a>
             </li>
