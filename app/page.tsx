@@ -12,7 +12,7 @@ async function Homepage() {
     console.log(news)
       
   return (
-     <div className="flex flex-col items-center justify-center min-h-screen">
+     <div className="flex flex-col items-center justify-center min-h-screen mx-auto max-w-7xl">
           <h1 className="font-serif text-2xl md:text-4xl mt-3">
             <span className="underline decoration-6 decoration-orange-400">LATEST</span> NEWS
           </h1>
