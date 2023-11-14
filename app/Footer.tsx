@@ -27,6 +27,10 @@ function Footer() {
   const handleBusinessClick = () => {
     router.push('/businesses'); 
   };
+  const handleScheduleClick = () => {
+    router.push('/schedule'); 
+  };
+
 
 
   return (  
@@ -129,7 +133,7 @@ function Footer() {
           <p className="text-lg font-medium text-gray-900 dark:text-orange-400">Resources</p>
           <ul className="mt-4 space-y-4 text-sm">
             <li>
-              <a className="text-gray-700 cursor-pointer transition dark:text-white hover:text-gray-700/75">
+              <a className="text-gray-700 cursor-pointer transition dark:text-white hover:text-gray-700/75" onClick={handleScheduleClick}>
                 Weekly Schedule
               </a>
             </li>
