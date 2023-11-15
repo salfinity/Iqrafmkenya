@@ -127,7 +127,7 @@ const SchedulePage = () => {
       <DropdownMenu days={daysOfWeek} activeDay={activeDay} onDayChange={handleDayChange} />
 
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6   gap-8 mt-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mt-8">
         {scheduleData
           .filter((item) => item.day === daysOfWeek[activeDay])
           .map((item, index) => (
