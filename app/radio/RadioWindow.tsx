@@ -18,7 +18,7 @@ function RadioWindow() {
            width={imageWidth}
            height={imageHeight}
            objectFit="cover"
-           src="/radiowindow/meccaday.jpeg"
+           src="/radiowindow/aqsaday.jpeg"
            alt="image"
            />
        </div>
@@ -51,7 +51,7 @@ function RadioWindow() {
            width={imageWidth}
            height={imageHeight}
            objectFit="cover"
-           src="/radiowindow/meccanight.jpeg"
+           src="/radiowindow/aqsanight.jpeg"
            alt="image"
            />
        </div>
