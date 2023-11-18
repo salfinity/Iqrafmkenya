@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { FaWhatsappSquare } from 'react-icons/fa';
 import { MdOutlineClose } from 'react-icons/md';
 
 
@@ -31,6 +32,16 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         </div>
         <div className="my-4">{children}</div>
         <div className="border-t flex justify-end pt-2 space-x-4">
+        <a
+            href="https://wa.me/254702802937"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsappSquare
+              className="cursor-pointer text-slate-600 hover:text-slate-700"
+              size={40}
+            />
+          </a>
           <button
             type="button"
             className="px-6 py-2 rounded text-black text-sm font-semibold border-none outline-none bg-gray-200 hover:bg-gray-300 active:bg-gray-200"
@@ -40,13 +51,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
           </button>
           <button
             type="button"
-            className="px-6 py-2 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+            className="px-6 py-2 rounded text-white text-sm font-semibold border-none outline-none bg-slate-600 hover:bg-slate-700 active:bg-blue-600"
             onClick={() => {
-              // Add your save logic here
+              window.location.href = 'tel:+254702802937';
               onClose();
             }}
           >
-            Save
+            Call us
           </button>
         </div>
       </div>

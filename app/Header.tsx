@@ -48,12 +48,13 @@ function Header() {
         <div className="my-4">
          <h3 className='text-black font-bold'>IQRABIASHARA SELLERS</h3>
           <p className="text-sm text-black">
-          To become a seller on Iqrabiashara, kindly reach out to us at 0712345678. 
-          Ensure to furnish us with comprehensive details about your business, such
-          as its location (whether it is online, shop-based, or home-based), the nature 
-          of your offerings, and any other pertinent information. Once provided, we will 
-          showcase your products on our platform, allowing potential buyers to easily discover 
-          and engage with your offerings.
+          To join Iqrabiashara as a seller, please get in touch with us at 0712345678. 
+          Kindly provide detailed information about your business, including its location 
+          (online, shop-based, or home-based), the products or services you offer, and any other 
+          relevant details. Please note that a registration fee of 1000 Kenyan Shillings is required 
+          to become a seller. Once you have completed the registration process and submitted the necessary information, 
+          we will feature your products on our platform, making it easy for potential buyers to discover 
+          and explore what you have to offer.
           </p>
           {/* Add more content as needed */}
         </div>
