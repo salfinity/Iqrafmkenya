@@ -43,7 +43,7 @@ function Footer() {
            height={300}
            objectFit="cover"
            className="rounded-full w-32 ml-28 md:ml-0"
-           src='/team/iqra.jpg'
+           src='/iqra.jpg'
            alt=""
          />
  

@@ -40,7 +40,7 @@ function Header() {
      {/* Subscribe button dropdown */}
      {subscribeVisible && (
           <div
-            className='absolute top-12 left-0 bg-white p-4 shadow-md rounded-md md:hidden'
+            className='absolute z-10 top-12 mt-6 left-0 bg-zinc-500 dark:bg-slate-400 p-2 shadow-md rounded-xl md:hidden'
             onClick={toggleSubscribe}
           >
             <button className='block bg-slate-900 text-white px-4 lg:px-8 ly-2 lg:py-4 rounded-full dark:bg-slate-800'>
