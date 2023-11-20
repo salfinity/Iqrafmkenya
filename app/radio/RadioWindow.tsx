@@ -44,13 +44,13 @@ function RadioWindow() {
        {/* Display only one image on smaller screens with certain effect*/}
        <div className="w-full sm:hidden">
         <div className="container">
-        <Slider {...settings}>
-          {slideData.map((item) => (
-            <Slide
-              key={item.id}  img={item.img} 
-            />
-          ))}
-        </Slider>
+            <Slider {...settings}>
+              {slideData.map((item) => (
+                <Slide
+                  key={item.id}  img={item.img} 
+                />
+              ))}
+            </Slider>
           <div className="absolute inset-0 bg-black opacity-0 dark:opacity-30 z-10"></div>
         </div>
       </div>
