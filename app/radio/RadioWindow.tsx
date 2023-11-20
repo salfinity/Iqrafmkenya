@@ -4,13 +4,8 @@ import Image from "next/image";
 import RadioButton from "./RadioButton"
 import Slide from "../Slide";
 import Slider from "react-slick";
-import useDarkMode from 'use-dark-mode';
 
 function RadioWindow() {
-  const darkMode = useDarkMode();
-  console.log("Dark Mode State:", darkMode.value);
-
-
   const imageWidth = 100; 
   const imageHeight = 100; 
 
@@ -18,15 +13,15 @@ function RadioWindow() {
   const slideData = [
     {
       id: 0,
-      img: darkMode.value ? "/radiowindow/aqsanight.jpeg" : "/radiowindow/aqsaday.jpeg",
+      img: "/radiowindow/aqsaday.jpeg",
     },
     {
       id: 1,
-      img: darkMode.value ? "/radiowindow/madinanight.jpeg" : "/radiowindow/madinaday.jpeg",
+      img: "/radiowindow/madinaday.jpeg",
     },
     {
       id: 2,
-      img: darkMode.value ? "/radiowindow/meccanight.jpeg" : "/radiowindow/meccaday.jpeg",
+      img: "/radiowindow/meccaday.jpeg",
     },
   ];
 
