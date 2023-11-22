@@ -12,9 +12,11 @@ const Slide: React.FC<propsType> = ({ img }) => {
   return (
     <div className="outline-none border-none relative">  
       <Image
-        className="w-full h-full rounded-xl object-cover"
+        className="w-full h-full rounded-xl"
         src={img}
         alt="banner"
+        layout="responsive"
+        objectFit="cover"
         width={imageWidth}
         height={imageHeight}
       />

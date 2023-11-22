@@ -36,6 +36,13 @@ function RadioButton() {
       >
         {isPlaying ? <FaRegStopCircle /> : <AiOutlinePlayCircle />}
       </button>
+      <a className="group flex justify-center gap-1.5 mt-24 md:mt-40 ltr:sm:justify-start rtl:sm:justify-end">
+          <span className="font-bold md:text-xl text-gray-100 transition group-hover:text-gray-300/75">Live radio</span>
+           <span className="relative flex h-3 w-3">
+             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+             <span className="relative inline-flex h-2 w-2 rounded-full bg-red-600"></span>
+          </span>
+       </a>
     </div>
   );
 }

@@ -59,7 +59,7 @@ function RadioWindow() {
       <div className="w-full rounded m-0 scale-150 dark:scale-125 hover:shadow-xl transition-all duration-200 ease-in-out">
           <Image
             className="w-full h-full"
-           layout="responsive"
+            layout="responsive"
             width={imageWidth}
             height={imageHeight}
             objectFit="cover"
