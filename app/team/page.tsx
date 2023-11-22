@@ -66,7 +66,7 @@ function TeamPage() {
           width={imageWidth}
           height={imageHeight}
          
-            objectFit="cover" src="/team/shuaib.png"
+            objectFit="cover" src="/team/shuaib.jpeg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
                <p className="mb-2 font-bold">Shuaib Ali</p>
                <p className="text-neutral-500 dark:text-neutral-300">
@@ -96,17 +96,7 @@ function TeamPage() {
                <p className="text-neutral-500 dark:text-neutral-300">Sports Presenter</p>
              </div>
 
-             <div className="mb-12">
-               <Image layout="fixed"
-          width={imageWidth}
-          height={imageHeight}
-         
-            objectFit="cover" src="/team/ramadhan.png"
-                 className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="" />
-               <p className="mb-2 font-bold">Ramadhan Ali</p>
-               <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
-             </div>
-
+             
              <div className="mb-12">
                <Image layout="fixed"
           width={imageWidth}
@@ -123,9 +113,9 @@ function TeamPage() {
           width={imageWidth}
           height={imageHeight}
          
-            objectFit="cover" src="/team/musa.jpg"
+            objectFit="cover" src="/management/mosque.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
-               <p className="mb-2 font-bold">Musa Khaemba</p>
+               <p className="mb-2 font-bold">MashaAllah</p>
                <p className="text-neutral-500 dark:text-neutral-300">
                  Presenter
                </p>
@@ -137,8 +127,20 @@ function TeamPage() {
           height={imageHeight}
          
             objectFit="cover" src="/management/mosque.jpg"
+                 className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt="" />
+               <p className="mb-2 font-bold">MashaAllah</p>
+               <p className="text-neutral-500 dark:text-neutral-300">Presenter</p>
+             </div>
+
+
+             <div className="mb-12">
+               <Image layout="fixed"
+          width={imageWidth}
+          height={imageHeight}
+         
+            objectFit="cover" src="/management/mosque.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
-               <p className="mb-2 font-bold">Aisling Sheldon</p>
+               <p className="mb-2 font-bold">MashaAllah</p>
                <p className="text-neutral-500 dark:text-neutral-300">
                  Senior developer
                </p>
@@ -151,7 +153,7 @@ function TeamPage() {
          
             objectFit="cover" src="/management/mosque.jpg"
                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20 h-56 md:max-width:100px" alt=""  />
-               <p className="mb-2 font-bold">Ayat Black</p>
+               <p className="mb-2 font-bold">MashaAllah</p>
                <p className="text-neutral-500 dark:text-neutral-300">Web designer</p>
              </div>
            </div>
