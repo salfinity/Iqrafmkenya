@@ -35,34 +35,14 @@ const Summary = () => {
   }, 0);
 
   const onCheckout = async () => {
-    try {
-      // Make a request to your backend to initiate M-Pesa payment
-      const mpesaResponse = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
-        BusinessShortCode: "174379",
-        Password: "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3",
-        Timestamp: "20160216165627",
-        TransactionType: "CustomerPayBillOnline",
-        Amount: "1",
-        PartyA: "254708374149",
-        PartyB: "174379",
-        PhoneNumber: "254708374149",
-        CallBackURL: "https://mydomain.com/pat",
-        AccountReference: "Test",
-        TransactionDesc: "Test",
-      });
+    const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
+      productIds: items.map((item) => item.id)
+    });
 
-      // Handle the M-Pesa response
-      console.log('M-Pesa Response:', mpesaResponse.data);
+    window.location = response.data.url;
+  }; 
 
-      // Redirect the user to the M-Pesa payment page
-      window.location = mpesaResponse.data.url;
-    } catch (error: any) {
-      console.error('Error initiating M-Pesa payment:', error.message);
-      // Handle error, show error message to the user
-      toast.error('Error initiating M-Pesa payment. Please try again.');
-    }
-  };
-
+  
   return ( 
     <div className="mt-16 rounded-lg bg-gray-50 dark:bg-slate-900 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8">
       <h2 className="text-lg font-medium text-gray-900 dark:text-white">

@@ -47,8 +47,8 @@ const Info: React.FC<InfoProps> = ({ data }) => {
             {data?.phone?.value}
           </div>
         </div>
-      <div className="mt-10 flex items-center gap-x-3">
-        <Button onClick={onAddToCart} className="flex items-center gap-x-2">
+      <div className="mt-10 flex items-center  gap-x-3 px-3 ">
+        <Button onClick={onAddToCart} className="flex items-center gap-x-2 border-2 rounded-full border-black dark:border-white">
           Add To Cart
           <ShoppingCart size={20} />
         </Button>
