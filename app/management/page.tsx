@@ -100,11 +100,11 @@ function Page() {
               height={imageHeight} // Set the height for the image
               objectFit="cover"
               alt=""
-              src="/management/mosque.jpg"
+              src="/management/moha.jpeg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">MaashaAllah</p>
-            <p className="text-neutral-500 dark:text-neutral-300">President</p>
+            <p className="mb-2 font-bold">Mohammed Rajab</p>
+            <p className="text-neutral-500 dark:text-neutral-300">Technical support officer</p>
           </div>
           {/* ... Repeat this structure for other team members */}
         </div>
