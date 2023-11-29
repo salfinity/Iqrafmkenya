@@ -39,7 +39,20 @@ function Page() {
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
             <p className="mb-2 font-bold">MaashaAllah</p>
-            <p className="text-neutral-500 dark:text-neutral-300">President</p>
+            <p className="text-neutral-500 dark:text-neutral-300">Vice President</p>
+          </div>
+          <div className="mb-12">
+            <Image
+              layout="fixed" // Use "fixed" layout to specify width and height
+              width={imageWidth} // Set the width for the image
+              height={imageHeight} // Set the height for the image
+              objectFit="cover"
+              alt=""
+              src="/management/bahaidar.jpeg"
+              className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
+            />
+            <p className="mb-2 font-bold">Dr. Mohamed Ahmed Bahaidar</p>
+            <p className="text-neutral-500 dark:text-neutral-300">CEO</p>
           </div>
           <div className="mb-12">
             <Image
@@ -51,8 +64,21 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">MaashaAllah</p>
-            <p className="text-neutral-500 dark:text-neutral-300">President</p>
+            <p className="mb-2 font-bold">Sofia Ibrahim</p>
+            <p className="text-neutral-500 dark:text-neutral-300">Head of Programs</p>
+          </div>
+          <div className="mb-12">
+            <Image
+              layout="fixed" // Use "fixed" layout to specify width and height
+              width={imageWidth} // Set the width for the image
+              height={imageHeight} // Set the height for the image
+              objectFit="cover"
+              alt=""
+              src="/team/galoro.jpeg"
+              className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
+            />
+            <p className="mb-2 font-bold">Samira Galoro</p>
+            <p className="text-neutral-500 dark:text-neutral-300">Head of productions</p>
           </div>
           <div className="mb-12">
             <Image
@@ -64,34 +90,8 @@ function Page() {
               src="/management/mosque.jpg"
               className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
             />
-            <p className="mb-2 font-bold">MaashaAllah</p>
-            <p className="text-neutral-500 dark:text-neutral-300">President</p>
-          </div>
-          <div className="mb-12">
-            <Image
-              layout="fixed" // Use "fixed" layout to specify width and height
-              width={imageWidth} // Set the width for the image
-              height={imageHeight} // Set the height for the image
-              objectFit="cover"
-              alt=""
-              src="/management/mosque.jpg"
-              className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-            />
-            <p className="mb-2 font-bold">MaashaAllah</p>
-            <p className="text-neutral-500 dark:text-neutral-300">President</p>
-          </div>
-          <div className="mb-12">
-            <Image
-              layout="fixed" // Use "fixed" layout to specify width and height
-              width={imageWidth} // Set the width for the image
-              height={imageHeight} // Set the height for the image
-              objectFit="cover"
-              alt=""
-              src="/management/mosque.jpg"
-              className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-            />
-            <p className="mb-2 font-bold">MaashaAllah</p>
-            <p className="text-neutral-500 dark:text-neutral-300">President</p>
+            <p className="mb-2 font-bold">Khamis Abdallah</p>
+            <p className="text-neutral-500 dark:text-neutral-300">Editor</p>
           </div>
           <div className="mb-12">
             <Image
