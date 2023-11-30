@@ -17,10 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta
-        name="google-site-verification"
-        content="9Mxe6avlOdc4bPrFzIWamOeP1AQBve7iOsn3rUoSpUs"
-      />
       <Providers>
         <body
           className="bg-gray-200 h-full dark:bg-zinc-900 transition-all
