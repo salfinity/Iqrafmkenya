@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GoogleAnalytics from "./GoogleAnalytics";
+import LiveChatButton from "./LiveChatButton";
 
 export const metadata = {
   title: "IQRA_FM Kenya | 95.0 idhaailio tofauti",
@@ -29,6 +30,7 @@ export default function RootLayout({
             {children}
           </div>
           <Footer />
+          <LiveChatButton />
         </body>
       </Providers>
     </html>
