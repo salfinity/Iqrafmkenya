@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface ScheduleItemProps {
   photo: string;
@@ -9,13 +9,27 @@ interface ScheduleItemProps {
   time: string;
 }
 
-const ScheduleItem: React.FC<ScheduleItemProps> = ({ photo, day, scheduleName, hostName, time }) => {
+const ScheduleItem: React.FC<ScheduleItemProps> = ({
+  photo,
+  day,
+  scheduleName,
+  hostName,
+  time,
+}) => {
   return (
     <div className="p-4 mb-4 text-center justify-center">
-      <Image width={250} height={250} src={photo} alt="Schedule" className="mb-4 mx-auto rounded-full" />
+      <Image
+        width={250}
+        height={250}
+        src={photo}
+        alt="Schedule"
+        className="mb-4 mx-auto rounded-full"
+      />
       <p className="text-lg font-bold">{day}</p>
-      <p className="text-gray-700 dark:text-gray-400">{scheduleName}</p>
-      <p className="text-gray-700 dark:text-gray-400">{hostName}</p>
+      <p className="font-bold text-slate-700 dark:text-slate-400">
+        {scheduleName}
+      </p>
+      <p className="text-orange-700 dark:text-orange-400">{hostName}</p>
       <p className="text-gray-700 dark:text-gray-400">{time}</p>
     </div>
   );

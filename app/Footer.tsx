@@ -114,12 +114,8 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  className="text-gray-700 dark:text-white transition hover:text-gray-700/75"
-                  href="https://twitter.com/iqrafm?lang=en"
-                  target="_blank"
-                >
-                  Islamic Education
+                <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75">
+                  Marketing
                 </a>
               </li>
               <li>
@@ -141,7 +137,7 @@ function Footer() {
               </li>
               <li>
                 <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75">
-                  Donations
+                  Donations support
                 </a>
               </li>
             </ul>
@@ -187,6 +183,15 @@ function Footer() {
               Helpful Links
             </p>
             <ul className="mt-4 space-y-4 text-sm">
+              <li>
+                <a
+                  className="text-gray-700 dark:text-white transition hover:text-gray-700/75"
+                  href="https://twitter.com/iqrafm?lang=en"
+                  target="_blank"
+                >
+                  Islamic Education
+                </a>
+              </li>
               <li>
                 <a className="text-gray-700 dark:text-white transition hover:text-gray-700/75">
                   FAQs
