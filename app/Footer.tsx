@@ -45,9 +45,9 @@ function Footer() {
           />
 
           <p className="mt-4 max-w-sm md:max-w-md text-center leading-relaxed text-gray-500 dark:text-white  mr-auto">
-            At Masjid Al-Huda - South B MRQQ+WVR, Aoko Rd, Nairobi | Phone•0721
-            116591|IqraFM Tel 3861555 | Fax 3861543 www.iqra.co.ke | Copyright
-            All rights reserved
+            At Masjid Al-Huda - South B MRQQ+WVR, Aoko Rd, Nairobi. | Phone•0727
+            444454|IqraFM Tel 3861555 | Fax 3861543 www.iqrafm.com | Copyright
+            &copy; 2023 All rights reserved.
           </p>
 
           <iframe
