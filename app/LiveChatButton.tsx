@@ -11,7 +11,7 @@ export default function LiveChatButton() {
           className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
           href="sms:+254727444454"
         >
-          <span className="text-gray-100 dark:text-white transition group-hover:text-gray-200/75">
+          <span className="text-gray-100 font-semibold dark:text-white transition group-hover:text-gray-200/75">
             Live Chat
           </span>
           <span className="relative flex h-2 w-2">
