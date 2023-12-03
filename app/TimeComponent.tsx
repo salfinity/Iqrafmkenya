@@ -39,8 +39,8 @@ const TimeComponent: React.FC<TimeComponentProps> = ({ timeZone }) => {
       <p className="text-lg font-semibold italic">Live: </p>
       <span className="font-semibold text-xl">{currentTime} </span>
       <span className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-red-500"></span>
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+        <span className="relative inline-flex h-3 w-3 rounded-full bg-red-700"></span>
       </span>
       <p className="text-lg font-serif">Nairobi</p>
     </div>
