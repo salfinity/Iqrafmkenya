@@ -88,7 +88,7 @@ function HistoryPage() {
             industry players to deliver educational programs that provide social
             and economic solutions to our esteemed listenership.
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
             </span>
@@ -101,7 +101,7 @@ function HistoryPage() {
             see the world from a broader perspective. We genuinely aspire to
             engage our learned audience and positively impact our communities.
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
             </span>
@@ -116,7 +116,7 @@ function HistoryPage() {
             and entertainment within Islamic parameters while also enhancing the
             civic and cultural life of the people we serve.
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Target
             </span>
@@ -135,14 +135,14 @@ function HistoryPage() {
             particular emphasis on the muslim community and other listeners
             within our transmission area of service.
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
             </span>
             <span className="text-5xl font-extrabold">Objectives</span>
           </h2>{" "}
           <p>
-            <p>
+            <p className="mb-3">
               OBJECTIVES The main objective of establishing IQRA radio was to
               give the ever-increasing Muslim population in Kenya a voice after
               year’s in oblivion. This was however extended to include other
@@ -193,7 +193,7 @@ function HistoryPage() {
               programme has converted several non-muslims to Islam.
             </p>
           </p>{" "}
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
             </span>
@@ -224,7 +224,7 @@ function HistoryPage() {
               and economic issues, health and educational programmes.
             </p>
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
             </span>
@@ -238,7 +238,7 @@ function HistoryPage() {
             capable of meeting the specific interest of our target audience and
             business clients.
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
             </span>
@@ -268,7 +268,7 @@ function HistoryPage() {
               that was shelved after we initiated a public debate that attracted
               even the support of non-Muslims.{" "}
             </p>
-            <p className="mt-4">
+            <p className="mt-4 mb-2">
               We have been greatly involved also by the government and it’s
               agencies through educative campaigns e.g.{" "}
             </p>
@@ -286,7 +286,7 @@ function HistoryPage() {
               Somalia.
             </p>
           </p>
-          <h2 className="mt-4">
+          <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Head quarters &
             </span>
