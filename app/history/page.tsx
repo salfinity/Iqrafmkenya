@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import impressImg from "public/management/impress.jpg";
-import { RiRadioButtonFill, RiArrowGoBackFill } from "react-icons/ri";
+import { RiArrowGoBackFill } from "react-icons/ri";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { ImLocation } from "react-icons/im";
 import { IoIosCall } from "react-icons/io";
@@ -123,7 +123,7 @@ function HistoryPage() {
             <span className="text-5xl font-extrabold">Audience</span>
           </h2>{" "}
           <p>
-            The station's programming has been geared towards a family friendly
+            The station’s programming has been geared towards a family friendly
             audience with shows that educate, entertain and inform a Muslim and
             also a Non-Muslim audience that is looking for reliable and trusted
             information on Islam and Muslims in Kenya. The listenership spectrum
@@ -143,7 +143,7 @@ function HistoryPage() {
           </h2>{" "}
           <p>
             <p>
-              OBJECTIVES   The main objective of establishing IQRA radio was to
+              OBJECTIVES The main objective of establishing IQRA radio was to
               give the ever-increasing Muslim population in Kenya a voice after
               year’s in oblivion. This was however extended to include other
               issues:
@@ -203,10 +203,10 @@ function HistoryPage() {
             <p className="font-semibold">
               Iqra FM broadcasts for 19 hours 15 Minutes a day; from 04:45am to
               12:00 Midnight. Seventy percent of this airtime has been dedicated
-              to religious programmes that include :-  {" "}
+              to religious programmes that include :-{" "}
             </p>
             <p>- Holy Quran recitations</p>
-            <p>-Quran Translations in English, Swahili, Somali and Urdu. </p>
+            <p>- Quran Translations in English, Swahili, Somali and Urdu. </p>
             <p>- Talks by Prominent scholars from Kenya and abroad. </p>
             <p>- Question and Answer sessions on religious matters. </p>
             <p>
@@ -214,7 +214,7 @@ function HistoryPage() {
               Fiqh.{" "}
             </p>
             <p>- Enlighting program on Teaching your self Arabic </p>
-            <p>- Educative program in Kikuyu Language.   </p>
+            <p>- Educative programs in Kikuyu Language.   </p>
             <p className="font-semibold">
               The remaining Thirty Percent of our airtime is dedicated to:-{" "}
             </p>
@@ -250,13 +250,13 @@ function HistoryPage() {
               successes in the quest of its objectives. Under the banner “The
               Station With a Difference”, Iqra FM commands a respectable
               listenership of 2 Million Muslims in Nairobi and its environs. A
-              significant number of Non – Muslims have also embraced our radio
+              significant number of Non–Muslims have also embraced our radio
               programme and Islamic teachings.{" "}
             </p>
             <p>
               We are happy to report and give credit to Allah (SWT) that through
               our programmes an estimated over 10,000 people have reverted to
-              Islam through Iqra F.M since its inception.   Iqra FM has taken an
+              Islam through Iqra FM since its inception. Iqra FM has taken an
               influential position within the Kenyan population as a powerful
               voice and opinion shaper of the Muslim community.{" "}
             </p>
@@ -266,11 +266,11 @@ function HistoryPage() {
               steps that would have adversely affected the Muslim community. A
               good example was the West initiated Suppression of Terrorism Bill
               that was shelved after we initiated a public debate that attracted
-              even the support of non-Muslims.  {" "}
+              even the support of non-Muslims.{" "}
             </p>
             <p className="mt-4">
-              We have been greatly involved also by the government and its
-              agencies through educative campaigns e.g.  {" "}
+              We have been greatly involved also by the government and it’s
+              agencies through educative campaigns e.g.{" "}
             </p>
             <p>
               a) Independent Electoral and Boundaries Commission (I.E.B.C) where
@@ -298,10 +298,10 @@ function HistoryPage() {
               Al Huda Mosque South B, Nairobi, Kenya.{" "}
             </span>
             Our premises serve as our head quarters with all operational
-            departments housed in the site including the media studio.    We
-            have a transmission site situated in Ngecha Area in Limuru that host
-            a 5kw transmitter which provides transmission on a radius of 200
-            Kilometers reaching Nairobi and its environs.
+            departments housed in the site including the media studio. We have a
+            transmission site situated in Ngecha Area in Limuru that host a 5kw
+            transmitter which provides transmission on a radius of 200
+            Kilometers reaching Nairobi and it’s environs.
           </p>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-300 rounded-xl py-4">
