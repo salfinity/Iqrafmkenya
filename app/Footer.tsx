@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   const router = useRouter();
@@ -248,7 +249,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
+      <div className="mt-16 border-t border-gray-100 pt-6 items-center sm:flex sm:items-center sm:justify-between">
         <p className="text-center text-sm text-gray-500 dark:text-white sm:text-left">
           Copyright &copy; IqraFM 2023. All rights reserved.
         </p>
@@ -269,17 +270,31 @@ function Footer() {
               />
             </a>
           </li>
-
           <li>
             <a
-              href="https://www.instagram.com/iqrafm/?hl=es-la"
+              href="https://www.tiktok.com/@iqrafm.95.0?_t=8hr9rQxiy18&_r=1"
               rel="noreferrer"
               target="_blank"
               className="text-teal-700 transition hover:text-teal-700/75"
             >
-              <span className="sr-only">Instagram</span>
-              <AiFillInstagram
-                className="h-7 w-7"
+              <span className="sr-only">Tiktok</span>
+              <FaTiktok
+                className="h-6 w-6"
+                fill="currentColor"
+                aria-hidden="true"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://youtube.com/@IqraFm95.0"
+              rel="noreferrer"
+              target="_blank"
+              className="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span className="sr-only">YouTube</span>
+              <FaYoutube
+                className="h-6 w-6"
                 fill="currentColor"
                 aria-hidden="true"
               />
@@ -296,6 +311,21 @@ function Footer() {
               <span className="sr-only">Twitter</span>
               <AiFillTwitterCircle
                 className="h-6 w-6"
+                fill="currentColor"
+                aria-hidden="true"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/iqrafm/?hl=es-la"
+              rel="noreferrer"
+              target="_blank"
+              className="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span className="sr-only">Instagram</span>
+              <AiFillInstagram
+                className="h-7 w-7"
                 fill="currentColor"
                 aria-hidden="true"
               />
