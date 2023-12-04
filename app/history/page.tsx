@@ -42,7 +42,7 @@ function HistoryPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
+      <div className="max-w-6xl mx-auto p-4 pr-4 grid md:grid-cols-5 gap-8 py-8">
         <div className="font-serif col-span-4">
           <p>OUR STORY</p>
           <h2>
@@ -51,43 +51,46 @@ function HistoryPage() {
             </span>
             <span className="text-5xl font-extrabold">2001</span>
           </h2>
-          <p className="mb-3 text-gray-900 dark:text-gray-300 font-semibold">
-            In the name of Allah, The most gracious, The merciful.
-          </p>{" "}
-          <p className="mb-3 text-gray-900 dark:text-gray-300">
-            Since 2001, IQRA FM has stood as the pioneering and foremost radio
-            station in Kenya. Currently undergoing a transformative rebranding
-            and relaunching process, we herald a new era marked by superior
-            programming and presentation.
-          </p>{" "}
-          <p className="mb-3 text-gray-900 dark:text-gray-300 ">
-            This evolution signifies a commitment to becoming a premier platform
-            for Islamic content and education. With a proactive approach, we are
-            dedicated to enlightening, entertaining, exploring, and educating
-            individuals across all age groups and society at large. Our
-            particular emphasis lies in mentorship, fostering growth, and
-            promoting Islamic values, ideas, talents, and businesses to a
-            diverse and expanding audience, spanning across Africa and beyond.
-          </p>{" "}
-          <p className="mb-3 text-gray-900 dark:text-gray-300 ">
-            Recognized as the top Islamic Radio Station by IPSOS, securing the
-            1st position, we boast a reach of 700,000 regular listeners. IQRA FM
-            has been a stalwart representative of Muslim voices for over two
-            decades, and we remain steadfast in solidifying this position while
-            increasingly resonating with a vibrant and youthful audience. Our
-            reporting, programming, and segmentation are consistently
-            distinctive.
-          </p>
-          {""}
-          <p className="mb-3 text-gray-900 dark:text-gray-300 ">
-            Moreover, we actively offer networking opportunities and welcome
-            collaborations with various Islamic businesses to promote growth and
-            development. Our overarching goal is to create an environment
-            conducive to collaboration, positively impacting all stakeholders to
-            achieve shared objectives. As we continually evolve, we engage with
-            industry players to deliver educational programs that provide social
-            and economic solutions to our esteemed listenership.
-          </p>
+          <div className="max-w-6xl">
+            <p className="mb-3 text-gray-900 dark:text-gray-300 font-semibold">
+              In the name of Allah, The most gracious, The merciful.
+            </p>{" "}
+            <p className="mb-3 text-gray-900 dark:text-gray-300">
+              Since 2001, IQRA FM has stood as the pioneering and foremost radio
+              station in Kenya. Currently undergoing a transformative rebranding
+              and relaunching process, we herald a new era marked by superior
+              programming and presentation.
+            </p>{" "}
+            <p className="mb-3 text-gray-900 dark:text-gray-300 ">
+              This evolution signifies a commitment to becoming a premier
+              platform for Islamic content and education. With a proactive
+              approach, we are dedicated to enlightening, entertaining,
+              exploring, and educating individuals across all age groups and
+              society at large. Our particular emphasis lies in mentorship,
+              fostering growth, and promoting Islamic values, ideas, talents,
+              and businesses to a diverse and expanding audience, spanning
+              across Africa and beyond.
+            </p>{" "}
+            <p className="mb-3 text-gray-900 dark:text-gray-300 ">
+              Recognized as the top Islamic Radio Station by IPSOS, securing the
+              1st position, we boast a reach of 700,000 regular listeners. IQRA
+              FM has been a stalwart representative of Muslim voices for over
+              two decades, and we remain steadfast in solidifying this position
+              while increasingly resonating with a vibrant and youthful
+              audience. Our reporting, programming, and segmentation are
+              consistently distinctive.
+            </p>
+            {""}
+            <p className="mb-3 text-gray-900 dark:text-gray-300 ">
+              Moreover, we actively offer networking opportunities and welcome
+              collaborations with various Islamic businesses to promote growth
+              and development. Our overarching goal is to create an environment
+              conducive to collaboration, positively impacting all stakeholders
+              to achieve shared objectives. As we continually evolve, we engage
+              with industry players to deliver educational programs that provide
+              social and economic solutions to our esteemed listenership.
+            </p>
+          </div>
           <h2 className="mt-4 mb-2">
             <span className="text-red-600 font-serif text-3xl font-extrabold pr-3">
               Our
