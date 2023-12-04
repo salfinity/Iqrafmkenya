@@ -14,10 +14,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
   return (
     <div
-      className="fixed inset-0 p-6 md:p-48 flex flex-wrap 
-      justify-center items-center w-full mx-auto h-screen z-[1000] 
+      className="fixed inset-0 p-6 md:p-12 flex flex-wrap 
+      justify-center items-center w-full mx-auto h-full z-[1000] 
       before:fixed before:inset-0 before:w-full before:h-full 
-      before:bg-[rgba(0,0,0,0.5)] overflow-auto font-[sans-serif]"
+      before:bg-[rgba(0,0,0,0.5)] font-[sans-serif]"
       style={modalStyle}
     >
       <div className="w-full max-w-lg md:max-w-3xl justify-center bg-white shadow-lg rounded-xl mx-auto px-4 py-4 relative">
