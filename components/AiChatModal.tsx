@@ -40,21 +40,21 @@ const Modal: React.FC<ModalProps> = ({
         <div className="border-t flex justify-end pt-2 space-x-4">
           <button
             type="button"
-            className="px-6 py-2 rounded-full text-black text-sm font-semibold border-none outline-none bg-gray-400 hover:bg-gray-500 active:bg-gray-200"
+            className="px-6 py-2 rounded-full text-gray-400 text-sm font-semibold border-none outline-none bg-red-600 hover:bg-red-700 "
             onClick={onClose}
           >
             Exit
           </button>
           <button
             type="button"
-            className="px-6 py-2 rounded-full text-white text-sm font-semibold border-none outline-none bg-slate-600 hover:bg-slate-700 active:bg-blue-600"
+            className="px-6 py-2 rounded-full text-white text-sm font-semibold border-none outline-none bg-slate-600 hover:bg-slate-700 "
             onClick={onRefresh} // Use the onRefresh prop for the click event
           >
             New Chat
           </button>
           <button
             type="button"
-            className="px-6 py-2 rounded-full text-white text-sm font-semibold border-none outline-none bg-slate-600 hover:bg-slate-700 active:bg-blue-600"
+            className="px-6 py-2 rounded-full text-white text-sm font-semibold border-none outline-none bg-green-600 hover:bg-green-700 "
             onClick={() => {
               window.location.href = "tel:+254 727 444454";
               onClose();
