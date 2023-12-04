@@ -23,6 +23,11 @@ export default function LiveChatButton() {
     setAiModalOpen(!isAiModalOpen);
   };
 
+  const handleRefresh = () => {
+    // Add logic to clear the chat or perform any other refresh actions
+    setChatLog([]);
+  };
+
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     setChatLog((prevChatLog) => [
@@ -79,9 +84,13 @@ export default function LiveChatButton() {
         </a>
       </button>
       ;
-      <AiChatModal isOpen={isAiModalOpen} onClose={handleAiButtonClick}>
-        <div className="flex-grow p-2 md:p-6">
-          <div className="flex flex-col space-y-4 h-screen overflow-y-scroll">
+      <AiChatModal
+        isOpen={isAiModalOpen}
+        onClose={handleAiButtonClick}
+        onRefresh={handleRefresh}
+      >
+        <div className="flex-grow p-2 md:p-6 tracking-[px] font-mono">
+          <div className="flex flex-col space-y-4 h-[500px] md:h-[300px] overflow-y-scroll">
             {chatLog.map((message, index) => (
               <div
                 key={index}
@@ -107,7 +116,7 @@ export default function LiveChatButton() {
             )}
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex-none p-6">
+        <form onSubmit={handleSubmit} className="flex-none p-3">
           <div className="flex rounded-xl border border-gray-700 bg-gray-800">
             <input
               type="text"
@@ -116,6 +125,7 @@ export default function LiveChatButton() {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
             />
+
             <button
               type="submit"
               className="bg-purple-500 rounded-xl px-4 py-2 text-white font-semibold focus:outline-none hover:bg-purple-600 transition-colors duration-300"
