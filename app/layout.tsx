@@ -9,7 +9,7 @@ import LiveChatButton from "./LiveChatButton";
 
 export const metadata = {
   title: "IQRA_FM Kenya | 95.0 idhaailio tofauti",
-  description: "Developed by salfinity",
+  description: "Developed by Salfinity",
 };
 
 export default function RootLayout({
