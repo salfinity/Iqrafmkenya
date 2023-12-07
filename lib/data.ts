@@ -3,7 +3,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Monday",
-    scheduleName: "Magazeti & Dau",
+    scheduleName: "Magazeti & Dau la IQRA",
     hostName: "Nur Said, Sophia, Fahamu Kazungu ",
     time: "7AM-10AM",
   },
@@ -31,8 +31,8 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Monday",
-    scheduleName: "Somali programme",
-    hostName: "John Doe",
+    scheduleName: "Somali Hour",
+    hostName: "Host",
     time: "1:30PM-3PM",
   },
   {
@@ -52,7 +52,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Monday",
-    scheduleName: "Salaam",
+    scheduleName: "Salaam za masalkheri",
     hostName: "Ahmed & Madina",
     time: "4:30PM-5:50PM",
   },
@@ -116,7 +116,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Tuesday",
-    scheduleName: "Magazeti & Dau",
+    scheduleName: "Magazeti & Dau la IQRA",
     hostName: "Nur Said, Sophia, Fahamu Kazungu ",
     time: "7AM-10AM",
   },
@@ -144,7 +144,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Tuesday",
-    scheduleName: "Somali programme",
+    scheduleName: "Somali Hour",
     hostName: "Host",
     time: "1:30PM-3PM",
   },
@@ -165,7 +165,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Tuesday",
-    scheduleName: "Salaam",
+    scheduleName: "Salaam za masalkheri",
     hostName: "Ahmed & Madina",
     time: "4:30PM-5:50PM",
   },
@@ -229,7 +229,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Wednesday",
-    scheduleName: "Magazeti & Dau",
+    scheduleName: "Magazeti & Dau la IQRA",
     hostName: "Nur Said, Sophia, Fahamu Kazungu ",
     time: "7AM-10AM",
   },
@@ -257,7 +257,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Wednesday",
-    scheduleName: "Somali programme",
+    scheduleName: "Somali Hour",
     hostName: "Host",
     time: "1:30PM-3PM",
   },
@@ -278,7 +278,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Wednesday",
-    scheduleName: "Salaam",
+    scheduleName: "Salaam za masalkheri",
     hostName: "Ahmed & Madina",
     time: "4:30PM-5:50PM",
   },
@@ -342,7 +342,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Thursday",
-    scheduleName: "Magazeti & Dau",
+    scheduleName: "Magazeti & Dau la IQRA",
     hostName: "Nur Said, Sophia, Fahamu Kazungu ",
     time: "7AM-10AM",
   },
@@ -370,7 +370,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Thursday",
-    scheduleName: "Somali programme",
+    scheduleName: "Somali Hour",
     hostName: "Host",
     time: "1:30PM-3PM",
   },
@@ -391,7 +391,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Thursday",
-    scheduleName: "Salaam",
+    scheduleName: "Salaam za masalkheri",
     hostName: "Ahmed & Madina",
     time: "4:30PM-5:50PM",
   },
@@ -455,7 +455,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Friday",
-    scheduleName: "Dau(Ali & Sophia) ",
+    scheduleName: "Dau la IQRA(Ali & Sophia) ",
     hostName: "Bustani la manufaa(Ali Salim)",
     time: "7AM-10AM",
   },
@@ -483,8 +483,8 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Friday",
-    scheduleName: "Somali programme",
-    hostName: "John Doe",
+    scheduleName: "Somali Hour",
+    hostName: "Host",
     time: "1:30PM-3PM",
   },
   {
@@ -504,7 +504,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Friday",
-    scheduleName: "Salaam & Shairi",
+    scheduleName: "Salaam za masalkheri & Shairi",
     hostName: "Ali, Ahmed & Madina",
     time: "4:30PM-5:50PM",
   },
@@ -596,7 +596,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Saturday",
-    scheduleName: "Somali programme",
+    scheduleName: "Somali Hour",
     hostName: "Host",
     time: "1:30PM-3PM",
   },
@@ -688,7 +688,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Sunday",
-    scheduleName: "Dau",
+    scheduleName: "Dau la IQRA",
     hostName: "Dr. Fahamu & Madina",
     time: "9AM-10AM",
   },
@@ -716,7 +716,7 @@ export const scheduleData = [
   {
     photo: "/management/mosque.jpg",
     day: "Sunday",
-    scheduleName: "Somali programme",
+    scheduleName: "Somali Hour",
     hostName: "Host",
     time: "1:30PM-3PM",
   },
