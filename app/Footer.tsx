@@ -213,8 +213,8 @@ function Footer() {
             </p>
             <div className="mx-auto mt-4 max-w-md sm:ms-0">
               <p className="leading-relaxed dark:text-white text-gray-700 ltr:sm:text-left rtl:sm:text-right">
-                IQRA FM, The station with a difference. We love you for the sake
-                of Allah Subhanahu Wataalah.
+                95.0 IQRA FM, Our New website. The station with a difference. We
+                love you for the sake of Allah Subhanahu Wataalah.
               </p>
               <form
                 action="https://getform.io/f/acf85c8f-60e6-46f0-bbc7-33461ad39d07"
