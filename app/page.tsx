@@ -1,28 +1,14 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { categories } from "@/constants";
 import fetchNews from "@/lib/fetchNews";
 import NewsList from "./NewsList";
 import response from "../response.json";
 
-function Homepage() {
-  const [news, setNews] = useState<NewsResponse | null>(null);
+async function Homepage() {
+  // Fetch news data
+  const news: NewsResponse = await fetchNews(categories.join(","));
 
-  useEffect(() => {
-    const fetchData = async () => {
-      // Fetch news data
-      const newsData: NewsResponse = await fetchNews(categories.join(","));
-      setNews(newsData);
-    };
-
-    fetchData();
-  }, []); // Empty dependency array ensures this runs only once on mount
-
-  if (!news) {
-    // You can render a loading state or return null if news is not yet available
-    return null;
-  }
+  console.log(news);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen mx-auto max-w-7xl">
