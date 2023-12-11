@@ -1,6 +1,6 @@
 // DropdownMenu.tsx
-import { ChevronsUpDown } from 'lucide-react';
-import React from 'react';
+import { ChevronsUpDown } from "lucide-react";
+import React from "react";
 
 interface DropdownMenuProps {
   days: string[];
@@ -8,7 +8,11 @@ interface DropdownMenuProps {
   onDayChange: (dayIndex: number) => void;
 }
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({ days, activeDay, onDayChange }) => (
+const DropdownMenu: React.FC<DropdownMenuProps> = ({
+  days,
+  activeDay,
+  onDayChange,
+}) => (
   <div className="md:hidden text-center w-[210px] mx-auto relative">
     <select
       value={activeDay}
