@@ -10,8 +10,6 @@ import getColors from "@/actions/get-colors";
 
 import Filter from "./components/filter";
 import MobileFilters from "./components/mobile-filters";
-import ToastProvider from "@/providers/toast-provider";
-import ModalProvider from "@/providers/modal-provider";
 
 export const revalidate = 0;
 

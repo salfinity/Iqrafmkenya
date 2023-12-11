@@ -4,9 +4,6 @@ import Info from "@/components/info";
 import getProduct from "@/actions/get-product";
 import getProducts from "@/actions/get-products";
 import Container from "@/components/ui/container";
-import ToastProvider from "@/providers/toast-provider";
-import ModalProvider from "@/providers/modal-provider";
-import Footer from "@/components/footer";
 
 interface ProductPageProps {
   params: {
