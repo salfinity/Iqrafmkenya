@@ -11,7 +11,7 @@ import MainNav from "./main-nav";
 import getCategories from "@/actions/get-categories";
 import { Category } from "@/types";
 
-const Navbar = async () => {
+const Navbar = () => {
   const [subscribeVisible, setSubscribeVisible] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [categories, setCategories] = useState<Category[]>([]);
