@@ -1,13 +1,12 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import Container from '@/components/ui/container';
-import useCart from '@/hooks/use-cart';
+import Container from "@/components/ui/container";
+import useCart from "@/hooks/use-cart";
 
-import Summary from './components/summary'
-import CartItem from './components/cart-item';
-import Footer from '@/components/footer';
+import Summary from "./components/summary";
+import CartItem from "./components/cart-item";
 
 export const revalidate = 0;
 
@@ -27,10 +26,16 @@ const CartPage = () => {
     <div className="bg-white items-center dark:bg-slate-900 mx-auto max-w-6xl">
       <Container>
         <div className="px-4 py-16 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-black dark:text-white">Shopping Cart</h1>
+          <h1 className="text-3xl font-bold text-black dark:text-white">
+            Shopping Cart
+          </h1>
           <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start gap-x-12">
             <div className="lg:col-span-7">
-              {cart.items.length === 0 && <p className="text-neutral-500 dark:text-neutral-400">No items added to cart.</p>}
+              {cart.items.length === 0 && (
+                <p className="text-neutral-500 dark:text-neutral-400">
+                  No items added to cart.
+                </p>
+              )}
               <ul>
                 {cart.items.map((item) => (
                   <CartItem key={item.id} data={item} />
@@ -41,9 +46,8 @@ const CartPage = () => {
           </div>
         </div>
       </Container>
-      <Footer />
     </div>
-  )
+  );
 };
 
 export default CartPage;

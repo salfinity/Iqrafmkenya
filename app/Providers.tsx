@@ -2,11 +2,11 @@
 
 import { ThemeProvider } from "next-themes";
 
-function providers({children}: {children: React.ReactNode}) {
+function providers({ children }: { children: React.ReactNode }) {
   return (
-  <ThemeProvider enableSystem={true} attribute="class">
-    {children}
-   </ThemeProvider>
+    <ThemeProvider enableSystem={true} attribute="class">
+      {children}
+    </ThemeProvider>
   );
 }
 
