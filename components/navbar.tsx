@@ -3,17 +3,32 @@
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import NavbarActions from "@/components/navbar-actions";
-import getCategories from "@/actions/get-categories";
 import DarkModeButton from "@/app/DarkModeButton";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import Modal from "@/components/Modal";
 import React, { useEffect, useState } from "react";
 import MainNav from "./main-nav";
+import getCategories from "@/actions/get-categories";
+import { Category } from "@/types";
 
-const Navbar = () => {
+const Navbar = async () => {
   const [subscribeVisible, setSubscribeVisible] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
-  const [categories, setCategories] = useState<any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const categoriesData = await getCategories();
+        setCategories(categoriesData);
+      } catch (error) {
+        // Handle the error (e.g., show a message to the user)
+        console.error("Error fetching categories:", error);
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array means this effect runs once after the initial render.
 
   const toggleSubscribe = () => {
     setSubscribeVisible(!subscribeVisible);
@@ -22,24 +37,6 @@ const Navbar = () => {
   const handleButtonClick = () => {
     setModalOpen(!isModalOpen);
   };
-
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await getCategories();
-        setCategories(response);
-      } catch (error) {
-        console.log("Error fetching categories", error);
-      }
-    };
-
-    fetchCategories();
-
-    // Clean-up function (optional)
-    return () => {
-      console.log("Component will unmount or dependencies change");
-    };
-  }, []); // Empty dependency array means this effect runs once on mount
 
   return (
     <div className="max-w-8xl justify-center items-center">
@@ -103,10 +100,7 @@ const Navbar = () => {
             >
               <p className="font-bold text-xl">STORE</p>
             </Link>
-            {categories && categories.length > 0 && (
-              <MainNav data={categories} />
-            )}
-
+            <MainNav data={categories} />
             <NavbarActions />
           </div>
         </Container>
