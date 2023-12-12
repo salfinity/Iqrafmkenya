@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import GoogleAnalytics from "@/app/GoogleAnalytics";
 import LiveChatButton from "@/app/LiveChatButton";
 import BusinessFooter from "@/components/footer";
+import NavInBiz from "@/components/NavInBiz";
 
 export default function BusinessesLayout({
   children,
@@ -20,6 +21,7 @@ export default function BusinessesLayout({
              duration-700 items-center"
         >
           <GoogleAnalytics />
+          <NavInBiz />
           <Navbar />
           <div className="max-w-full h-1/2 justify-center items-center mx-auto">
             {children}
