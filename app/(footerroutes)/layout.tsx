@@ -4,10 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GoogleAnalytics from "@/app/GoogleAnalytics";
 import LiveChatButton from "@/app/LiveChatButton";
-import BusinessFooter from "@/components/footer";
 import FootNavbar from "@/components/FootNavbar";
 
-export default function BusinessesLayout({
+export default function FooterLayout({
   children,
 }: {
   children: React.ReactNode;
