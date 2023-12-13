@@ -16,7 +16,7 @@ function NavlLinks() {
   return (
     <nav
       className="grid grid-cols-4 md:grid-cols-7 text-xs md:text-sm
-    gap-4 pb-10 max-w-6xl mx-auto border-b"
+    gap-4 pb-10 max-w-full mx-auto border-b"
     >
       {categories &&
         categories.map((category) => (
