@@ -27,7 +27,7 @@ function Header() {
           className="h-8 w-8 cursor-pointer"
           onClick={toggleSubscribe}
         />
-        <Link href="/" prefetch={false}>
+        <Link href="/home" prefetch={false}>
           <h1 className="font-serif text-xl md:text-4xl text-center">
             <span
               className="underline decoration-6 

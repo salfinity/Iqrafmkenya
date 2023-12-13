@@ -3,7 +3,6 @@
 import { categories } from "@/constants";
 import fetchNews from "@/lib/fetchNews";
 import NewsList from "./NewsList";
-import response from "../response.json";
 import { IoAlertCircle } from "react-icons/io5";
 import NavlLinks from "./NavLinks";
 import SearchBox from "./SearchBox";

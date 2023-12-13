@@ -30,9 +30,9 @@ const HomePage = async () => {
       <div className="flex justify-center ml-auto">
         <button
           className="max-w-6xl border-4 mt-6 mb-10 md:mt-4 md:mb-12 
-     dark:border-white border-black rounded-md px-4 py-2"
+     dark:border-white border-black rounded-full px-4 py-2"
         >
-          <Link href="/">
+          <Link href="/home">
             <p
               className="text-bold text-black dark:text-white cursor-pointer 
           items-center flex pl-4 pr-4 gap-2"
