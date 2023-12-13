@@ -4,7 +4,7 @@ import { categories } from "@/constants";
 import fetchNews from "@/lib/fetchNews";
 import NewsList from "./NewsList";
 import { IoAlertCircle } from "react-icons/io5";
-import NavlLinks from "./NavLinks";
+import NavLinks from "./NavLinks";
 import SearchBox from "./SearchBox";
 
 async function Homepage() {
@@ -28,7 +28,7 @@ async function Homepage() {
         </span>{" "}
         NEWS
       </h1>
-      <NavlLinks />
+      <NavLinks />
       {/* searchBox */}
       <SearchBox />
       {(!news || news?.data?.length === 0) && (
