@@ -6,6 +6,17 @@ const fetchNews = async (
   keywords?: string,
   isDynamic?: boolean
 ) => {
+  let news: NewsResponse = {
+    length: 0,
+    pagination: {
+      count: 0,
+      limit: 0,
+      offset: 0,
+      total: 0,
+    },
+    data: [],
+  };
+
   const query = gql`
     query MyQuery(
       $access_key: String!
@@ -39,32 +50,45 @@ const fetchNews = async (
       }
     }
   `;
-  const res = await fetch(
-    "https://aubenas.stepzen.net/api/gaudy-goose/__graphql",
-    {
-      method: "POST",
-      cache: isDynamic ? "no-cache" : "default",
-      next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
-      },
-      body: JSON.stringify({
-        query,
-        variables: {
-          access_key: process.env.MEDIASTACK_API_KEY,
-          categories: category,
-          keywords: keywords,
+
+  try {
+    const res = await fetch(
+      "https://aubenas.stepzen.net/api/gaudy-goose/__graphql",
+      {
+        method: "POST",
+        cache: isDynamic ? "no-cache" : "default",
+        next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
         },
-      }),
+        body: JSON.stringify({
+          query,
+          variables: {
+            access_key: process.env.MEDIASTACK_API_KEY,
+            categories: category,
+            keywords: keywords,
+          },
+        }),
+      }
+    );
+
+    console.log(
+      "LOADING NEW DATA FROM API for category >>>",
+      category,
+      keywords
+    );
+
+    const newsResponse = await res.json();
+
+    if (newsResponse?.data) {
+      news = sortNewsByImage(newsResponse?.data?.myQuery);
+    } else {
+      console.log("No news Data : ", newsResponse?.errors?.message);
     }
-  );
-
-  console.log("LOADING NEW DATA FROM API for category >>>", category, keywords);
-
-  const newsResponse = await res.json();
-
-  const news = sortNewsByImage(newsResponse.data.myQuery);
+  } catch (err) {
+    console.log("No News Error : ", err);
+  }
 
   return news;
 };

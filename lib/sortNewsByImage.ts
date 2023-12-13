@@ -3,6 +3,7 @@ export default function sortNewsByImage(news: NewsResponse) {
   const newsWithoutImage = news.data.filter((item) => item.image === null);
 
   const sortedNewsResponse = {
+    length: news?.data.length,
     pagination: news.pagination,
     data: [...newsWithImage, ...newsWithoutImage],
   };

@@ -74,11 +74,11 @@ function AdvertsPage() {
           />
         </div>
       </div>
-      <button className="border-4 dark:border-white border-black rounded-md px-4 py-2">
-        <Link href="/">
-          <p className="underline text-black dark:text-white cursor-pointer items-center flex pl-8 pr-8 gap-2">
+      <button className="border-4 dark:border-white border-black rounded-full px-4 py-2">
+        <Link href="/home">
+          <span className="underline text-black dark:text-white cursor-pointer items-center flex pl-8 pr-8 gap-2">
             <RiArrowGoBackFill className="text-bold" /> Back
-          </p>
+          </span>
         </Link>
       </button>
     </div>

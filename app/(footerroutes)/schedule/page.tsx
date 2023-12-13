@@ -5,6 +5,8 @@ import Navigation from "./Navigation";
 import ScheduleItem from "./ScheduleItem";
 import DropdownMenu from "./DropdownMenu";
 import { scheduleData } from "@/lib/data";
+import Link from "next/link";
+import { RiArrowGoBackFill } from "react-icons/ri";
 
 // Define an interface for the schedule item
 interface ScheduleItemData {
@@ -67,6 +69,13 @@ const SchedulePage = () => {
             <ScheduleItem key={index} {...item} />
           ))}
       </div>
+      <button className="border-4 dark:border-white border-black rounded-full px-4 py-2">
+        <Link href="/home">
+          <p className="underline text-black dark:text-white cursor-pointer items-center flex pl-16 gap-2">
+            <RiArrowGoBackFill className="text-bold" /> Back
+          </p>
+        </Link>
+      </button>
     </div>
   );
 };

@@ -11,18 +11,21 @@ function NavlLinks() {
     return pathname?.split("/").pop() === path;
   };
 
+  // console.log(categories);
+
   return (
     <nav
       className="grid grid-cols-4 md:grid-cols-7 text-xs md:text-sm
     gap-4 pb-10 max-w-6xl mx-auto border-b"
     >
-      {categories.map((category) => (
-        <NavLink
-          key={category}
-          category={category}
-          isActive={isActive(category)}
-        />
-      ))}
+      {categories &&
+        categories.map((category) => (
+          <NavLink
+            key={category}
+            category={category}
+            isActive={isActive(category)}
+          />
+        ))}
     </nav>
   );
 }
