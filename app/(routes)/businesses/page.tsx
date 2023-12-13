@@ -1,5 +1,3 @@
-"use client";
-
 import getBillboard from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";
 import ProductList from "@/components/product-list";
@@ -9,7 +7,6 @@ import Container from "@/components/ui/container";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 import Link from "next/link";
-import router from "next/router";
 import { RiArrowGoBackFill } from "react-icons/ri";
 
 export const revalidate = 0;
@@ -17,10 +14,6 @@ export const revalidate = 0;
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
   const billboard = await getBillboard("ed3b339c-fca8-477a-9dd7-c7cb211f0180");
-
-  const goToHomePage = () => {
-    router.push("/home");
-  };
 
   return (
     <div className="container max-w-7xl">
@@ -39,11 +32,10 @@ const HomePage = async () => {
           className="max-w-6xl border-4 mt-6 mb-10 md:mt-4 md:mb-12 
      dark:border-white border-black rounded-full px-4 py-2"
         >
-          <Link href="">
+          <Link href="/">
             <p
               className="text-bold text-black dark:text-white cursor-pointer 
           items-center flex pl-4 pr-4 gap-2"
-              onClick={goToHomePage}
             >
               <RiArrowGoBackFill className="text-bold" />
               Back to Homepage
