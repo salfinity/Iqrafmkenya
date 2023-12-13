@@ -16,7 +16,8 @@ async function Homepage() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center mx-auto mt-24 mb-24 max-w-6xl"
+      className="flex flex-col items-center justify-center mx-auto mt-24 mb-24 max-w-6xl
+      border-t  border-neutral-400"
       id="home"
     >
       <h1 className="font-serif text-xl md:text-4xl text-center mt-6">

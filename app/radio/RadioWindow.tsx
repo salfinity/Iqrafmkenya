@@ -34,13 +34,13 @@ function RadioWindow() {
   };
 
   return (
-    <div className="h-[auto] md:h-[auto] relative container box-border items-center max-w-6xl md:max-w-6xl mx-auto overflow-clip cursor-pointer border-b mb-4 border-neutral-400">
+    <div className="h-[auto] md:h-[auto] relative container box-border items-center max-w-6xl md:max-w-6xl mx-auto overflow-clip cursor-pointer ">
       <div className="absolute z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <RadioButton />
       </div>
 
       {/* Display only one image on smaller screens with certain effect*/}
-      <div className="w-full border-b mb-4 border-neutral-400 sm:hidden">
+      <div className="w-full sm:hidden">
         <div className="container">
           <Slider {...settings}>
             {slideData.map((item) => (
