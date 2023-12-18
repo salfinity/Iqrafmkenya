@@ -9,7 +9,8 @@ import SearchBox from "./SearchBox";
 import { useRef } from "react";
 
 async function Homepage() {
-  const ref = useRef<HTMLDivElement>(null);
+  const { ref } = useSectionInView("home");
+
   // Fetch news data
   const news: NewsResponse = await fetchNews(categories.join(","));
 
@@ -126,4 +127,7 @@ async function Homepage() {
 
 export default Homepage;
  */
+}
+function useSectionInView(arg0: string): { ref: any } {
+  throw new Error("Function not implemented.");
 }
