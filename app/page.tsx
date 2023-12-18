@@ -6,11 +6,10 @@ import NewsList from "./NewsList";
 import { IoAlertCircle } from "react-icons/io5";
 import NavLinks from "./NavLinks";
 import SearchBox from "./SearchBox";
-import { useRef } from "react";
+import { LegacyRef } from "react";
 
 async function Homepage() {
-  const { ref } = useSectionInView("home");
-
+  const ref = document.getElementById("home");
   // Fetch news data
   const news: NewsResponse = await fetchNews(categories.join(","));
 
@@ -22,7 +21,7 @@ async function Homepage() {
       className="flex flex-col items-center justify-center mx-auto mt-24 mb-24 max-w-6xl
       border-t  border-neutral-400"
       id="home"
-      ref={ref}
+      ref={ref as LegacyRef<HTMLDivElement>}
     >
       <h1 className="font-serif text-xl md:text-4xl text-center mt-6">
         <span
@@ -127,7 +126,4 @@ async function Homepage() {
 
 export default Homepage;
  */
-}
-function useSectionInView(arg0: string): { ref: any } {
-  throw new Error("Function not implemented.");
 }
